@@ -1,11 +1,23 @@
 # Proyecto-Capstone-Codigo-IoT-G7-Maduración de frutas-
-Repositorio del proyecto Capstone del diplomado de Codigo IoT generación 7 equipo "Maduración de frutas"
+Repositorio del proyecto Capstone del diplomado de Codigo IoT generación 7 equipo "Maduración de frutas". 
 
+## Integrantes:
+* Erica Saavedra
+*
+* **Ramsés Ortiz** 
+
+## Introducción.
 En base a los objetivos de desarrollo sostenible de la ONU nos enfocamos a ver los probelmas que tiene el país de México, resaltando la desnutrición, gran parte del territorio nacional presenta una mala alimentación.
-La forma en que abordamos el problema es incrementar la accesibilidad de frutas y verduras, para ello ocupamos un dispositivo que detecte el grado de madures de estos productos de forma objetiva.
+
+La forma en que abordamos el problema es incrementar la accesibilidad de frutas y verduras, para ello proponemos un dispositivo que detecte el grado de madures de estos productos de forma objetiva, ayudando a la gestion de los productos al comerciante, dandole información del periodo de vida util, grado de maduración, fechas para donación.
+
+En base al objetivo de [**Hambre Cero de la PNUD**](https://www.undp.org/es/sustainable-development-goals#hambre-cero) "Para 2030, duplicar la productividad agrícola y los ingresos de los pequeños productores de alimentos, en particular de las mujeres, los pueblos indígenas, los agricultores familiares, los pastores y los pescadores, incluso mediante un acceso seguro e igualitario a la tierra, otros recursos e insumos productivos, conocimientos y servicios financieros. mercados y oportunidades de valor añadido y empleo no agrícola."
+
+Y de forma directa el aportar en cumplir el [objetivo 12 de la PNUD PRODUCCIÓN Y CONSUMO RESPONSABLES](https://www.undp.org/es/sustainable-development-goals#produccion-consumo-responsables) "De aquí a 2030, reducir a la mitad el desperdicio de alimentos per capita mundial en la venta al por menor y a nivel de los consumidores y reducir las pérdidas de alimentos en las cadenas de producción y suministro, incluidas las pérdidas posteriores a la cosecha."
+
 ## Dispositivo
-El dispositivo debera detectar varios indicadores de madures de la mayoria de los productos, asociando un conjunto de valores de referencia a cada tipo de profucto.
-Los indicadores de madures que se encuentran son:
+Debera detectar varios indicadores de madures de la mayoria de los productos, asociando un conjunto de valores de referencia a cada tipo de profucto.
+Los indicadores de madures son:
 * Concentración de Gas **Etileno**
 * **Temperatura** ambiente y del producto
 * Concentración de gas **CO2**
