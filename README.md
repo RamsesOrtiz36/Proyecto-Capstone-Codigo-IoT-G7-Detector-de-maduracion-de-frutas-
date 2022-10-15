@@ -3,7 +3,7 @@ Repositorio del proyecto Capstone del diplomado de Codigo IoT generación 7 equi
 
 ## Integrantes:
 * Erica Saavedra
-*
+* Omar Ojeda
 * **Ramsés Ortiz** 
 
 ## Introducción.
