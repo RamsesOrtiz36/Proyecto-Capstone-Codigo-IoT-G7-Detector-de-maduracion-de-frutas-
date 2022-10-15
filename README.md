@@ -33,3 +33,45 @@ Cada indicador puede tener mínimo un sensor que obtenga de forma cuantitativa u
 * Para la humedad del aire usaremos "DHT11" que se encuentra dentro del Kit del diplomado
 * Para la detección de la **textura** se buscarán opciones 
 * Para el color se podria usar la camara y mediante analisis de imagen detectar color y porcentaje de color en la superficie delimitada.  
+
+## División del proyecto en partes
+Se propone ver el proyecto en partes funcionales y determinar que funciones rrealiza cada una.
+* Dispositivo.
+* Base de datos.
+* Procesamiento de datos.
+### Funciones del dispositivo
+En el dispositivo cumplira funciones de entrada y salida, donde los sensores son entradas y una pantalla será la salida
+* Detectar temperatura y humedad del ambiente
+* Detectar temperatura del producto
+* Detectar concentración de CO2 del espacio cercano al producto
+* Detectar el color del producto
+* Detectar la firmeza del producto.
+
+Para darle información al usuario se ocupa una pantalla y un medio para introducir información directamente del usuario
+* Mostrar lista de nombres de productos para que el usuario lo seleccione.
+* Agregar calibración por el usuario.
+* Enviar datos a base de datos
+* Mostrar información del producto al usuario
+  * Grado de madures del producto
+  * Tiempo de vida (calendario o grafica de Gantt)
+  * Señal para donación
+  * Información de valor agregado (recetas de cocina con el conjunto de productos)
+
+### Función de la base de datos
+* Guardar los valores de los sensores enviados por el dispositivo
+* Entregar datos al sistema de procesamiento de datos
+
+### Procesamiento de datos
+* Tomar datos de referencia de la base de datos según el producto
+* Tomar datos de sensores guardados en base de datos según el producto
+
+* Comparar conjunto de datos de sensores contra conjunto de valores de referencia para el producto especifico.
+* Determinar grado de madures del producto.
+* Determinar tiempo de vida útil 
+* Determinar fecha para donación de producto 
+* Enviar resultados
+
+
+
+
+
