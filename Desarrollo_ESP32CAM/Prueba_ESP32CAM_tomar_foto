@@ -1,0 +1,21 @@
+/*Codigo desarrollado por Ramses Ortiz para tomar foto con ESP32CAM
+Fecha: 05 Noviembre 2022
+
+Se busca establecer el funcionamiento de la ESP32CAM para que tome una foto
+
+Conexiones del hardware
+
+*/
+
+//Iniciamos con llamar a las bibliotecas a usar
+
+
+// Declaración de variables que se usaran en el transcurso del codigo
+
+
+// Poner las condiciones iniciales y establecer comunicación 
+
+
+
+// Programa con el ciclo infinito de ejecución
+
