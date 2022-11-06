@@ -5,4 +5,5 @@ Al trabajar con el microcontrolador ESP32CAM buscamos usar la camara para captur
 + [esp32-camera](https://github.com/espressif/esp32-camera)
 + [Proyecto de la comunidad Codigo IoT](https://edu.codigoiot.com/course/view.php?id=896)
   + [El proyecto cuenta con el siguiente codigo para ESP32CAM en GITHUB](https://github.com/Vivanco443/Proyecto_Capstone.git)    
-+ 
++ [Tomar foto y guardar la en memoria externa microsd](https://randomnerdtutorials.com/esp32-cam-take-photo-save-microsd-card/)
++ [Tomar foto y enviarla a servidor, proyecto base del proyecto de comunidad Codigo IoT](https://randomnerdtutorials.com/esp32-cam-take-photo-display-web-server/)
