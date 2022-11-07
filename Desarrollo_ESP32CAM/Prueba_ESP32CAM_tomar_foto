@@ -9,8 +9,35 @@ Conexiones del hardware
 
 //Iniciamos con llamar a las bibliotecas a usar
 
+#include <Arduino.h>
+#include <WiFi.h>
+#include "soc/soc.h"
+#include "soc/rtc_cntl_reg.h"
+#include "esp_camera.h"
+#include <PubSubClient.h>
 
 // Declaración de variables que se usaran en el transcurso del codigo
+
+    // Credenciales ssid (WiFi)
+const char *ssid = "INFINITUM1885_2.4";     // Nombre de RED WiFi
+const char *password = "7pxYYmS6EP"; //  Contraseña de WiFi
+
+    //Datos del broker MQTT
+const char* mqtt_server = "192.168.1.65"; // Si estas en una red local, coloca la IP asignada, en caso contrario, coloca la IP publica
+IPAddress server(192,168,1,65);
+
+    // Objeros
+WiFiClient espClient; // Este objeto maneja los datos de conexion WiFi
+PubSubClient client(espClient); // Este objeto maneja los datos de conexion al broker
+
+    // Variables
+int ledPin = 4;  // Para indicar el estatus de conexión
+int ledPin2 = 33; // Para mostrar mensajes recibidos
+long timeNow, timeLast; // Variables de control de tiempo no bloqueante
+int wait = 5000;  // Indica la espera cada 5 segundos para envío de mensajes MQTT
+
+
+
 
 
 // Poner las condiciones iniciales y establecer comunicación 
