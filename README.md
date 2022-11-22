@@ -3,6 +3,10 @@ Repositorio del proyecto Capstone del diplomado de Codigo IoT generación 7 equi
 
 En base a los objetivos de desarrollo sostenible de la ONU nos enfocamos a ver los probelmas que tiene el país de México, resaltando la desnutrición, gran parte del territorio nacional presenta una mala alimentación.
 La forma en que abordamos el problema es incrementar la accesibilidad de frutas y verduras, para ello ocupamos un dispositivo que detecte el grado de madures de estos productos de forma objetiva.
+## Integrantes del equipo:
+* Ramsés Ortiz Castro
+* Erica Saavedra Riveros
+* Ojeda Aguilar Jose Omar
 ## Dispositivo
 El dispositivo debera detectar varios indicadores de madures de la mayoria de los productos, asociando un conjunto de valores de referencia a cada tipo de profucto.
 Los indicadores de madures que se encuentran son:
