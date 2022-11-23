@@ -71,3 +71,4 @@ Para darle información al usuario se ocupa una pantalla y un medio para introdu
 * Determinar tiempo de vida útil 
 * Determinar fecha para donación de producto 
 * Enviar resultados
+xx
