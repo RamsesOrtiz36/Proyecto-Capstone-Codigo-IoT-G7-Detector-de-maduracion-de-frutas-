@@ -1,1 +1,60 @@
+//Primer intento de matriz de sensores (se trabaja para mejorar)
+int mq2;
+int mq3;
+int mq4;
+int mq5;
+int mq7;
+int mq9;
+int a;
+int b;
+int c;
+int d;
 
+void setup() {
+  Serial.begin(9600);
+
+}
+
+void loop() {
+  mq2 = analogRead(A0);
+  mq3 = analogRead(A1);
+  mq4 = analogRead(A2);
+  mq7 = analogRead(A3);
+  mq9 = analogRead(A4);
+  mq5 = analogRead(A5);
+  
+
+  a = mq3;
+  b = mq4;
+  c = (mq7 + mq9)/2;
+  d = (mq2 + mq5)/2;
+
+
+  
+if(mq3 >= 25 ){
+     Serial.print("Alcohol a ppm: ");
+     Serial.println(a);
+      delay(500);
+  }
+ 
+  
+if(mq4 >= 600  ){
+   Serial.print("Metano a ppm: ");
+   Serial.println(b);
+      delay(500);
+  }
+
+  
+if(mq7 >= 200 &&  mq9 >= 500 ){
+     Serial.print("Monoxido a ppm: ");
+     Serial.println(c);
+      delay(500);
+}
+if(mq2 >= 200  &&  mq5 >= 1000 ){
+     Serial.print("GLPBP a ppm: ");
+     Serial.println(d);
+        delay(500);
+}
+
+  
+}
