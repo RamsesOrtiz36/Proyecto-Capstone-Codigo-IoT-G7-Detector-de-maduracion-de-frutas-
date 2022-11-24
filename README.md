@@ -1,14 +1,21 @@
 # Proyecto-Capstone-Codigo-IoT-G7-Maduración de frutas-
 Repositorio del proyecto Capstone del diplomado de Codigo IoT generación 7 equipo "Maduración de frutas"
 
-En base a los objetivos de desarrollo sostenible de la ONU nos enfocamos a ver los probelmas que tiene el país de México, resaltando la desnutrición, gran parte del territorio nacional presenta una mala alimentación.
+Con base a los objetivos de desarrollo sostenible de la ONU nos enfocamos a ver los probelmas que tiene el país de México, resaltando la desnutrición, gran parte del territorio nacional presenta una mala alimentación.
 La forma en que abordamos el problema es incrementar la accesibilidad de frutas y verduras, para ello ocupamos un dispositivo que detecte el grado de madures de estos productos de forma objetiva.
+
+
+
 ## Integrantes del equipo:
 * Ramsés Ortiz Castro
 * Erica Saavedra Riveros
 * Ojeda Aguilar Jose Omar
+
+
+
 ## Dispositivo
 El dispositivo debera detectar varios indicadores de madures de la mayoria de los productos, asociando un conjunto de valores de referencia a cada tipo de profucto.
+
 Los indicadores de madures que se encuentran son:
 * Concentración de Gas **Etileno**
 * **Temperatura** ambiente y del producto
@@ -16,6 +23,9 @@ Los indicadores de madures que se encuentran son:
 * Porcentaje de **Humedad del aire** en el ambiente
 * Firmeza del cuerpo del producto o **Textura** 
 * **Color** de la superficie del producto.
+
+
+
 
 ### Sensores
 Cada indicador puede tener mínimo un sensor que obtenga de forma cuantitativa un valor
@@ -25,6 +35,9 @@ Cada indicador puede tener mínimo un sensor que obtenga de forma cuantitativa u
 * Para la humedad del aire usaremos "DHT11" que se encuentra dentro del Kit del diplomado
 * Para la detección de la **textura** se buscarán opciones 
 * Para el color se podria usar la camara y mediante analisis de imagen detectar color y porcentaje de color en la superficie delimitada.  
+
+
+
 
 ## Justificación:
 En la actualidad se genera mucho desperdicio a nivel mundial de alimentos per cápita en la venta al por menor y a nivel de los consumidores según en el punto 12.3 de Objetivo de Desarrollo Sostenible, el cual se pretende reducir las pérdidas de alimentos en las cadenas de producción y distribución.    
