@@ -1,0 +1,23 @@
+Implementación del sensor DHT11
+Se usara el sensor de temperatura y humedad en el proyecto “Detector de maduración de Frutas”.
+El DHT11 presume de ser un sensor con una alta fiabilidad y estabilidad debido a su señal digital calibrada.
+Los pines del sensor DHT11 son:
+•	VCC: alimentación
+•	I/O: transmisión de datos
+•	NC: no conecta, pin al aire
+•	GND: conexión a tierra
+Especificaciones:
+Alimentación: 3.5V a 5V
+Consumo: 2,5mA
+Señal de Salida: Digital
+Temperatura:
+Rango de medición: de 0°C a 50°C
+Precisión: de ±2°C
+Resolución: 8bit (1°C)
+Humedad:
+Rango de 20% RH a 90%RH
+Precisión: ±5%
+Resolución: RH(1%)
+Conexión: resistencia pull-up conectada a la salida digital I/O 10kΩy a su ves a  vcc del mismo sensor, también vcc conectado a 5V, la salida NC el pin no se conecta y GND se conecta a tierra.
+Programado del sensor DHT11 en IDE de Arduino 
+en primer lugar hay que instalar la librería DHT sensor library de Adafruit
