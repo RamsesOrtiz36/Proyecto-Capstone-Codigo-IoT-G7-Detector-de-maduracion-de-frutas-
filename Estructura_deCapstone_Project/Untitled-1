@@ -1,15 +1,15 @@
-Estructura de curso sugerida
+# Estructura de curso sugerida
 
-INTRODUCCIÓN: 
-
-
-
-
-PLANTEAMIENTO DEL PROBLEMA:
+## INTRODUCCIÓN: 
 
 
 
-JUSTIFICACIÓN:
+
+## PLANTEAMIENTO DEL PROBLEMA:
+
+
+
+## JUSTIFICACIÓN:
 
 En la actualidad se genera mucho desperdicio a nivel mundial de alimentos per cápita en la venta al 
 por menor y a nivel de los consumidores según en el punto 12.3 de Objetivo de Desarrollo Sostenible, 
