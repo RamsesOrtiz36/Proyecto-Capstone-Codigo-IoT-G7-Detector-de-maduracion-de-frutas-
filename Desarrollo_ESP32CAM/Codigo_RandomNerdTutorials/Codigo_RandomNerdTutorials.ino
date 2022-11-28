@@ -1,5 +1,4 @@
-/*********
-  Rui Santos
+ /*Rui Santos
   Complete project details at https://RandomNerdTutorials.com/esp32-cam-take-photo-save-microsd-card
   
   IMPORTANT!!! 
@@ -11,8 +10,6 @@
   of this software and associated documentation files.
   The above copyright notice and this permission notice shall be included in all
   copies or substantial portions of the Software.
-
-  Utilizado por Ramses Ortiz Castro 06/11/2022
 *********/
 
 #include "esp_camera.h"
@@ -109,12 +106,9 @@ void setup() {
   camera_fb_t * fb = NULL;
   
   // Take Picture with Camera
-  pinMode(4, OUTPUT);                             //CONFIGURA EL PUERTO DEL FLASH
-  digitalWrite(4, HIGH);                          //Enciende el flash para tomar la foto  
   fb = esp_camera_fb_get();  
   if(!fb) {
     Serial.println("Camera capture failed");
-    digitalWrite(4, LOW);                          //en caso de que falle tomar foto apaga el flash
     return;
   }
   // initialize EEPROM with predefined size
