@@ -73,6 +73,7 @@ Para darle información al usuario se ocupa una pantalla y un medio para introdu
 
 ### Función de la base de datos
 * Guardar los valores de los sensores enviados por el dispositivo
+* Guardar datos de referencia de cada fruta, color, maduración, olores y su tiempo de vida util.
 * Entregar datos al sistema de procesamiento de datos
 
 ### Procesamiento de datos

@@ -18,6 +18,9 @@ Humedad:
 Rango de 20% RH a 90%RH
 Precisión: ±5%
 Resolución: RH(1%)
-Conexión: resistencia pull-up conectada a la salida digital I/O 10kΩy a su ves a  vcc del mismo sensor, también vcc conectado a 5V, la salida NC el pin no se conecta y GND se conecta a tierra.
+Conexión: resistencia pull-up conectada a la salida digital I/O 10kΩy a su ves a  vcc del mismo sensor,
+también vcc conectado a 5V, la salida NC el pin no se conecta y GND se conecta a tierra.
 Programado del sensor DHT11 en IDE de Arduino 
 en primer lugar hay que instalar la librería DHT sensor library de Adafruit
+se usara una tarjeta de Arduino uno para hacer la concion del sensor DHT11 el cual su salida digital I/O
+ira conectada a puerto digital 2 del arduino uno.
