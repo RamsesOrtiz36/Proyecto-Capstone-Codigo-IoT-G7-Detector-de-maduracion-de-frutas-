@@ -1,9 +1,9 @@
 #include <WebServer.h>
 #include <WiFi.h>
-#include <esp32cam.h>
+#include <esp32cam.h>//esp32cam.h
  
-const char* WIFI_SSID = "ssid";
-const char* WIFI_PASS = "password";
+const char* WIFI_SSID = "INFINITUM1885_2.4";
+const char* WIFI_PASS = "7pxYYmS6EP";
  
 WebServer server(80);
  
@@ -28,7 +28,7 @@ void serveJpg()
   frame->writeTo(client);
 }
  
-Void handleJpgLo()
+void handleJpgLo()
 {
   if (!esp32cam::Camera.changeResolution(loRes)) {
     Serial.println("SET-LO-RES FAIL");
@@ -36,7 +36,7 @@ Void handleJpgLo()
   serveJpg();
 }
  
-Void handleJpgHi()
+void handleJpgHi()
 {
   if (!esp32cam::Camera.changeResolution(hiRes)) {
     Serial.println("SET-HI-RES FAIL");
@@ -44,7 +44,7 @@ Void handleJpgHi()
   serveJpg();
 }
  
-Void handleJpgMid()
+void handleJpgMid()
 {
   if (!esp32cam::Camera.changeResolution(midRes)) {
     Serial.println("SET-MID-RES FAIL");
@@ -53,7 +53,7 @@ Void handleJpgMid()
 }
  
  
-Void  setup(){
+void  setup(){
   Serial.begin(115200);
   Serial.println();
   {
@@ -86,7 +86,7 @@ Void  setup(){
   server.begin();
 }
  
-Void loop()
+void loop()
 {
   server.handleClient();
 }
