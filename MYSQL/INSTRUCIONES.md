@@ -21,6 +21,8 @@
     - nombre de la fruta
     - fecha
     - temperatura
-    - gases que emite
-    - estado de maduración
-    - días en estado para un buen consumo
+    - humedad
+    - gases que emite (lista de gases para cada gas una columna, pueden ser los que se tiene en el codigo de arduino que hizo Erica) (nuemrico)
+    - (¿Se puede guardar imagen como tipo de dato? en caso de ser que sí, entonces guardariamos la foto de la fruta de ese momento jpeg o png)
+    - estado de maduración (numerico del 1 al 4 o texto)
+    - días en estado para un buen consumo (variable tipo fecha)
