@@ -14,3 +14,5 @@
 3. Seleccionar base de datos
     - `use Detector-de-maduracion-de-frutas;`
 4. Crear una tabla llamada registro que contenga todos los campos necesarios.
+ temporales:
+ 
