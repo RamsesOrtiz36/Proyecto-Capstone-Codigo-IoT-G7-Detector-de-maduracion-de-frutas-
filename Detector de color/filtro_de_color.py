@@ -5,7 +5,7 @@ import numpy as np
 def nothing(x):
     pass
  
-url='http://192.168.1.61/cam-lo.jpg'
+url='http://192.168.1.70/cam-lo.jpg'
 ##'''cam.bmp / cam-lo.jpg /cam-hi.jpg / cam.mjpeg '''
 cv2.namedWindow("live transmission", cv2.WINDOW_AUTOSIZE)
  
