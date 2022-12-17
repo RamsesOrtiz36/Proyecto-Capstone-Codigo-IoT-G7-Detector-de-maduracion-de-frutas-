@@ -1,0 +1,325 @@
+[
+    {
+        "id": "d71760ddcde33178",
+        "type": "tab",
+        "label": "Flow de Pantalla de inicio ",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "a3a88172d5bd09a7",
+        "type": "group",
+        "z": "d71760ddcde33178",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "5f31b81c6570a3cb",
+            "aa184da171e173cd",
+            "c6e584a18385d792"
+        ],
+        "x": 534,
+        "y": 79,
+        "w": 232,
+        "h": 202
+    },
+    {
+        "id": "5f31b81c6570a3cb",
+        "type": "ui_dropdown",
+        "z": "d71760ddcde33178",
+        "g": "a3a88172d5bd09a7",
+        "name": "",
+        "label": "Nombre de Fruta",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "388100ccf6889e29",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Fruta 1",
+                "value": "1",
+                "type": "str"
+            },
+            {
+                "label": "Fruta 2",
+                "value": "2",
+                "type": "str"
+            },
+            {
+                "label": "Fruta 3",
+                "value": "3",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 650,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "aa184da171e173cd",
+        "type": "ui_dropdown",
+        "z": "d71760ddcde33178",
+        "g": "a3a88172d5bd09a7",
+        "name": "",
+        "label": "Medir o calibrar",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "388100ccf6889e29",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Medición",
+                "value": "1",
+                "type": "str"
+            },
+            {
+                "label": "Calibración",
+                "value": "2",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 640,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c6e584a18385d792",
+        "type": "ui_button",
+        "z": "d71760ddcde33178",
+        "g": "a3a88172d5bd09a7",
+        "name": "",
+        "group": "388100ccf6889e29",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Siguiente",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 620,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "577c17d2533ddfba",
+        "type": "inject",
+        "z": "d71760ddcde33178",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 220,
+        "y": 460,
+        "wires": [
+            [
+                "3062a177a0463c1b"
+            ]
+        ]
+    },
+    {
+        "id": "3062a177a0463c1b",
+        "type": "http request",
+        "z": "d71760ddcde33178",
+        "name": "",
+        "method": "GET",
+        "ret": "bin",
+        "paytoqs": "ignore",
+        "url": "http://192.168.1.69/capture",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 410,
+        "y": 460,
+        "wires": [
+            [
+                "df7e2e7df527ae8b",
+                "0a9f7b5693f6123d",
+                "c5d4e709ae864900"
+            ]
+        ]
+    },
+    {
+        "id": "df7e2e7df527ae8b",
+        "type": "file",
+        "z": "d71760ddcde33178",
+        "name": "Imagenes.png",
+        "filename": "/home/ramses/Imagenes.png",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 640,
+        "y": 460,
+        "wires": [
+            [
+                "f751ae518d29a257"
+            ]
+        ]
+    },
+    {
+        "id": "0a9f7b5693f6123d",
+        "type": "debug",
+        "z": "d71760ddcde33178",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "c5d4e709ae864900",
+        "type": "image viewer",
+        "z": "d71760ddcde33178",
+        "name": "",
+        "width": 160,
+        "data": "payload",
+        "dataType": "msg",
+        "active": true,
+        "x": 610,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2de26be9834a5aec",
+        "type": "ui_media",
+        "z": "d71760ddcde33178",
+        "group": "7bee1305ef1bdcd4",
+        "name": "",
+        "width": 0,
+        "height": 0,
+        "order": 0,
+        "category": "video",
+        "file": "Imagenes.png",
+        "layout": "expand",
+        "showcontrols": true,
+        "loop": true,
+        "onstart": false,
+        "scope": "local",
+        "tooltip": "",
+        "x": 1010,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f751ae518d29a257",
+        "type": "change",
+        "z": "d71760ddcde33178",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "mimetype",
+                "pt": "msg",
+                "to": "image/png",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 850,
+        "y": 460,
+        "wires": [
+            [
+                "2de26be9834a5aec"
+            ]
+        ]
+    },
+    {
+        "id": "388100ccf6889e29",
+        "type": "ui_group",
+        "name": "Selectores",
+        "tab": "6f41e214f2994ede",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7bee1305ef1bdcd4",
+        "type": "ui_group",
+        "name": "Imagen",
+        "tab": "6f41e214f2994ede",
+        "order": 1,
+        "disp": true,
+        "width": 12,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "6f41e214f2994ede",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    }
+]

@@ -1,0 +1,218 @@
+[
+    {
+        "id": "be5dde449a051eeb",
+        "type": "tab",
+        "label": "Flow Resultados",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "597f38d1e1ba235d",
+        "type": "inject",
+        "z": "be5dde449a051eeb",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 180,
+        "y": 140,
+        "wires": [
+            [
+                "f7fce06d303954cb"
+            ]
+        ]
+    },
+    {
+        "id": "f7fce06d303954cb",
+        "type": "ui_text",
+        "z": "be5dde449a051eeb",
+        "group": "a5c7b6c251ac7e49",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Fecha actual",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "x": 390,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "ef4a1606fb3b703d",
+        "type": "ui_text",
+        "z": "be5dde449a051eeb",
+        "group": "a5c7b6c251ac7e49",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Dias restantes",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 400,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "04a12ab95df9f560",
+        "type": "ui_text",
+        "z": "be5dde449a051eeb",
+        "group": "a5c7b6c251ac7e49",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Fecha limite",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 390,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "b0b205296924c270",
+        "type": "ui_gauge",
+        "z": "be5dde449a051eeb",
+        "name": "",
+        "group": "b030960fbef66354",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Donar poducto cuando llegue a ROJO",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 10,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 470,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "97192aaff153b8b5",
+        "type": "ui_ui_control",
+        "z": "be5dde449a051eeb",
+        "name": "",
+        "events": "change",
+        "x": 480,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "475a72b45cd617d7",
+        "type": "function",
+        "z": "be5dde449a051eeb",
+        "name": "function 1",
+        "func": "msg.payload = {\"tab\":\"Home\"}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 480,
+        "wires": [
+            [
+                "97192aaff153b8b5"
+            ]
+        ]
+    },
+    {
+        "id": "b8b8402aca3b410f",
+        "type": "ui_button",
+        "z": "be5dde449a051eeb",
+        "name": "",
+        "group": "3069ef3417c14a39",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "cambia de tab",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 140,
+        "y": 480,
+        "wires": [
+            [
+                "475a72b45cd617d7"
+            ]
+        ]
+    },
+    {
+        "id": "a5c7b6c251ac7e49",
+        "type": "ui_group",
+        "name": "Fechas ",
+        "tab": "b9fbc82f79980764",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b030960fbef66354",
+        "type": "ui_group",
+        "name": "Notificación de donación",
+        "tab": "b9fbc82f79980764",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3069ef3417c14a39",
+        "type": "ui_group",
+        "name": "Inicio",
+        "tab": "b9fbc82f79980764",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b9fbc82f79980764",
+        "type": "ui_tab",
+        "name": "Resultados",
+        "icon": "dashboard",
+        "order": 5,
+        "disabled": false,
+        "hidden": false
+    }
+]

@@ -4,13 +4,14 @@ import numpy as np                          #Biblioeca
  
 def nothing(x):
     pass
- 
+
+
 #change the IP address below according to the
 #IP shown in the Serial monitor of Arduino code
-url='http://192.168.1.70/cam-lo.jpg'                        #Declara el valor de url con la dirección en donde se envia la info el ESP32CAM
- 
+url='http://192.168.1.69/cam-lo.jpg'                        #Declara el valor de url con la dirección en donde se envia la info el ESP32CAM 
 cv2.namedWindow("live transmission", cv2.WINDOW_AUTOSIZE)   #Construye la ventana  de la imagen campturada desde la ESP32CAM
- 
+
+
 cv2.namedWindow("Tracking")                                     #Construye la ventana de las barras deslizantes de las variables        
 cv2.createTrackbar("LH", "Tracking", 0, 255, nothing)           #Construye las barras deslizantes de las variables
 cv2.createTrackbar("LS", "Tracking", 0, 255, nothing)
@@ -19,6 +20,8 @@ cv2.createTrackbar("UH", "Tracking", 255, 255, nothing)
 cv2.createTrackbar("US", "Tracking", 255, 255, nothing)
 cv2.createTrackbar("UV", "Tracking", 255, 255, nothing)
  
+
+
 while True:                                                         #Ejecuta el codigo continuamente dentro del while
     img_resp=urllib.request.urlopen(url)                            #Abre la url donde el ESP32CAM envia la imagen
     imgnp=np.array(bytearray(img_resp.read()),dtype=np.uint8)       #Lee la imagen en formato de array con la biblioteca de numpy= np
@@ -39,7 +42,7 @@ while True:                                                         #Ejecuta el 
     
     mask = cv2.inRange(hsv, l_b, u_b)                               #De la imagen (array) hsv selecciona los elementos dentro del rango minimo y maximo 
     res = cv2.bitwise_and(frame, frame, mask=mask)                  #Aplica la exclusion de la "mask" en el array "frame" y da imagen "res"
- 
+    
     cv2.imshow("live transmission", frame)                          #Muestra la ventana construida de frame nombre de ventana "live transmission"
     cv2.imshow("mask", mask)                                        #Muestra la ventana mask nombre "mask"    
     cv2.imshow("res", res)                                          #Muestra ventana res nombre "res"

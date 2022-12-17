@@ -1,0 +1,576 @@
+[
+    {
+        "id": "db493b0d9fc86436",
+        "type": "tab",
+        "label": "Flow de Calibración",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "2ad1a0cc5e0051b2",
+        "type": "group",
+        "z": "db493b0d9fc86436",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "66be8372557bb1a9",
+            "4784b28b0601d41c",
+            "85bdb1b9ff3c3200",
+            "bd7e7bbdb1fc5820",
+            "c88aa6a0e205e747",
+            "7ddd31859dc6ae61"
+        ],
+        "x": 54,
+        "y": 179,
+        "w": 372,
+        "h": 202
+    },
+    {
+        "id": "f16e2991f03cc84e",
+        "type": "group",
+        "z": "db493b0d9fc86436",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "30308a3eaa14f0b3",
+            "4aa4b2a51abe559e",
+            "7377ab08bafe3f12",
+            "b1bf4f3bb22fba71",
+            "18cf87ee93bd8e49",
+            "d74e476bc877f59a"
+        ],
+        "x": 454,
+        "y": 179,
+        "w": 382,
+        "h": 202
+    },
+    {
+        "id": "c88aa6a0e205e747",
+        "type": "ui_slider",
+        "z": "db493b0d9fc86436",
+        "g": "2ad1a0cc5e0051b2",
+        "name": "",
+        "label": "h min slider",
+        "tooltip": "",
+        "group": "1871e864c2a25e3e",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "255",
+        "step": 1,
+        "className": "",
+        "x": 150,
+        "y": 220,
+        "wires": [
+            [
+                "66be8372557bb1a9"
+            ]
+        ]
+    },
+    {
+        "id": "bd7e7bbdb1fc5820",
+        "type": "ui_slider",
+        "z": "db493b0d9fc86436",
+        "g": "2ad1a0cc5e0051b2",
+        "name": "",
+        "label": "s min slider",
+        "tooltip": "",
+        "group": "1871e864c2a25e3e",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "255",
+        "step": 1,
+        "className": "",
+        "x": 150,
+        "y": 280,
+        "wires": [
+            [
+                "4784b28b0601d41c"
+            ]
+        ]
+    },
+    {
+        "id": "7ddd31859dc6ae61",
+        "type": "ui_slider",
+        "z": "db493b0d9fc86436",
+        "g": "2ad1a0cc5e0051b2",
+        "name": "",
+        "label": "v min slider",
+        "tooltip": "",
+        "group": "1871e864c2a25e3e",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "255",
+        "step": 1,
+        "className": "",
+        "x": 150,
+        "y": 340,
+        "wires": [
+            [
+                "85bdb1b9ff3c3200"
+            ]
+        ]
+    },
+    {
+        "id": "30308a3eaa14f0b3",
+        "type": "ui_slider",
+        "z": "db493b0d9fc86436",
+        "g": "f16e2991f03cc84e",
+        "name": "",
+        "label": "h max slider",
+        "tooltip": "",
+        "group": "5ef9e22a3e489210",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "255",
+        "step": 1,
+        "className": "",
+        "x": 550,
+        "y": 220,
+        "wires": [
+            [
+                "b1bf4f3bb22fba71"
+            ]
+        ]
+    },
+    {
+        "id": "4aa4b2a51abe559e",
+        "type": "ui_slider",
+        "z": "db493b0d9fc86436",
+        "g": "f16e2991f03cc84e",
+        "name": "",
+        "label": "s max slider",
+        "tooltip": "",
+        "group": "5ef9e22a3e489210",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "255",
+        "step": 1,
+        "className": "",
+        "x": 550,
+        "y": 280,
+        "wires": [
+            [
+                "18cf87ee93bd8e49"
+            ]
+        ]
+    },
+    {
+        "id": "7377ab08bafe3f12",
+        "type": "ui_slider",
+        "z": "db493b0d9fc86436",
+        "g": "f16e2991f03cc84e",
+        "name": "",
+        "label": "v max slider",
+        "tooltip": "",
+        "group": "5ef9e22a3e489210",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "255",
+        "step": 1,
+        "className": "",
+        "x": 550,
+        "y": 340,
+        "wires": [
+            [
+                "d74e476bc877f59a"
+            ]
+        ]
+    },
+    {
+        "id": "35f76193779f8e40",
+        "type": "ui_dropdown",
+        "z": "db493b0d9fc86436",
+        "name": "",
+        "label": "Grado de maduración",
+        "tooltip": "",
+        "place": "",
+        "group": "eee61006b420f724",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Verde",
+                "value": "Verde",
+                "type": "str"
+            },
+            {
+                "label": "Maduro",
+                "value": "Maduro",
+                "type": "str"
+            },
+            {
+                "label": "Sobre maduro",
+                "value": "Sobre maduro",
+                "type": "str"
+            },
+            {
+                "label": "Exceso",
+                "value": "Exceso",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 500,
+        "y": 140,
+        "wires": [
+            [
+                "0310095812ad17d4"
+            ]
+        ]
+    },
+    {
+        "id": "68ff82ca2d616889",
+        "type": "ui_button",
+        "z": "db493b0d9fc86436",
+        "name": "",
+        "group": "eee61006b420f724",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Guardar calibración",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 110,
+        "y": 120,
+        "wires": [
+            [
+                "4cedacacee264cc4",
+                "806c41b568c325cf",
+                "35f76193779f8e40"
+            ]
+        ]
+    },
+    {
+        "id": "08827992d2c233e6",
+        "type": "debug",
+        "z": "db493b0d9fc86436",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "66be8372557bb1a9",
+        "type": "function",
+        "z": "db493b0d9fc86436",
+        "g": "2ad1a0cc5e0051b2",
+        "name": "function 2",
+        "func": "global.set(\"hmin\",msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3e2061fbb4401ef5",
+        "type": "json",
+        "z": "db493b0d9fc86436",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 550,
+        "y": 40,
+        "wires": [
+            [
+                "08827992d2c233e6"
+            ]
+        ]
+    },
+    {
+        "id": "4cedacacee264cc4",
+        "type": "function",
+        "z": "db493b0d9fc86436",
+        "name": "function 5",
+        "func": "msg.payload = { Hmin: global.get(\"hmin\"), Vmin: global.get(\"vmin\"), Smin: global.get(\"smin\")};\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 40,
+        "wires": [
+            [
+                "3e2061fbb4401ef5"
+            ]
+        ]
+    },
+    {
+        "id": "4784b28b0601d41c",
+        "type": "function",
+        "z": "db493b0d9fc86436",
+        "g": "2ad1a0cc5e0051b2",
+        "name": "function 6",
+        "func": "global.set(\"smin\",msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "85bdb1b9ff3c3200",
+        "type": "function",
+        "z": "db493b0d9fc86436",
+        "g": "2ad1a0cc5e0051b2",
+        "name": "function 7",
+        "func": "global.set(\"vmin\",msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b1bf4f3bb22fba71",
+        "type": "function",
+        "z": "db493b0d9fc86436",
+        "g": "f16e2991f03cc84e",
+        "name": "function 8",
+        "func": "global.set(\"hmax\",msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "18cf87ee93bd8e49",
+        "type": "function",
+        "z": "db493b0d9fc86436",
+        "g": "f16e2991f03cc84e",
+        "name": "function 9",
+        "func": "global.set(\"smax\",msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d74e476bc877f59a",
+        "type": "function",
+        "z": "db493b0d9fc86436",
+        "g": "f16e2991f03cc84e",
+        "name": "function 10",
+        "func": "global.set(\"vmax\",msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6414ce45c9fe1e9f",
+        "type": "debug",
+        "z": "db493b0d9fc86436",
+        "name": "debug 7",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "487a7dfc65eed6dc",
+        "type": "json",
+        "z": "db493b0d9fc86436",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 550,
+        "y": 100,
+        "wires": [
+            [
+                "6414ce45c9fe1e9f"
+            ]
+        ]
+    },
+    {
+        "id": "806c41b568c325cf",
+        "type": "function",
+        "z": "db493b0d9fc86436",
+        "name": "function 11",
+        "func": "msg.payload = { Hmax: global.get(\"hmax\"), Vmax: global.get(\"vmax\"), Smax: global.get(\"smax\")};\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 100,
+        "wires": [
+            [
+                "487a7dfc65eed6dc"
+            ]
+        ]
+    },
+    {
+        "id": "0310095812ad17d4",
+        "type": "debug",
+        "z": "db493b0d9fc86436",
+        "name": "debug 8",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "1871e864c2a25e3e",
+        "type": "ui_group",
+        "name": "Mínimos HSV",
+        "tab": "9e377d67f4a256c5",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5ef9e22a3e489210",
+        "type": "ui_group",
+        "name": "Maxímos HSV",
+        "tab": "9e377d67f4a256c5",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "eee61006b420f724",
+        "type": "ui_group",
+        "name": "Selector maduración",
+        "tab": "9e377d67f4a256c5",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "9e377d67f4a256c5",
+        "type": "ui_tab",
+        "name": "Calibración",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    }
+]
