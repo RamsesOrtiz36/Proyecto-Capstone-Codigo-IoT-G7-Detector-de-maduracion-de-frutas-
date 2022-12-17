@@ -1,3 +1,4 @@
+//Este codigo se agrega la comunicación con arduino por I2C
 #include <WebServer.h>
 #include <WiFi.h>
 #include <esp32cam.h>//esp32cam.h
