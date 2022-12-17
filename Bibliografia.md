@@ -13,4 +13,5 @@ Al trabajar con el microcontrolador ESP32CAM buscamos usar la camara para captur
 + Maduración de frutas(https://www.scielo.org.mx/scielo.php?script=sci_arttext&pid=S2007-09342017001104075)(https://exa.unne.edu.ar/biologia/fisiologia.vegetal/MADURACI%C3%93N%20de%20los%20FRUTOS.pdf)
 + (https://ciencia.unam.mx/leer/1132/-de-que-depende-la-maduracion-de-los-frutos-)
 + (https://www.intagri.com/articulos/poscosecha-comercializacion/papel-del-etileno-en-la-maduracion-de-frutos)
-+ 
++ [Uso del nodo ui_media en Node-red para mostrar imagen en dahsboard](https://www.youtube.com/watch?v=hVX4Q8_fK7M)
+
