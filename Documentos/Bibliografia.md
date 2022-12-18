@@ -14,4 +14,4 @@ Al trabajar con el microcontrolador ESP32CAM buscamos usar la camara para captur
 + (https://ciencia.unam.mx/leer/1132/-de-que-depende-la-maduracion-de-los-frutos-)
 + (https://www.intagri.com/articulos/poscosecha-comercializacion/papel-del-etileno-en-la-maduracion-de-frutos)
 + [Uso del nodo ui_media en Node-red para mostrar imagen en dahsboard](https://www.youtube.com/watch?v=hVX4Q8_fK7M)
-
++ [Subscripcion a MQTT desde Python](https://www.youtube.com/watch?v=T362losqJys)

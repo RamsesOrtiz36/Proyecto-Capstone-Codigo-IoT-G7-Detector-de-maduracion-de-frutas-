@@ -24,7 +24,7 @@ Los indicadores de madures que se encuentran son:
 * Firmeza del cuerpo del producto o **Textura** 
 * **Color** de la superficie del producto.
 
-
+![](https://github.com/RamsesOrtiz36/Proyecto-Capstone-Codigo-IoT-G7-Detector-de-maduracion-de-frutas-/blob/main/Imagenes%20detector%20de%20madurez%20de%20fruta/Detector%20de%20madurez%20de%20fruta.png)
 
 
 ### Sensores
