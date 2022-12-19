@@ -16,3 +16,4 @@ Al trabajar con el microcontrolador ESP32CAM buscamos usar la camara para captur
 + [Uso del nodo ui_media en Node-red para mostrar imagen en dahsboard](https://www.youtube.com/watch?v=hVX4Q8_fK7M)
 + [Subscripcion a MQTT desde Python](https://www.youtube.com/watch?v=T362losqJys)
 + [Calcular area en imagen Python opcen cv](https://es.stackoverflow.com/questions/419194/c%C3%A1lculo-de-area-con-opencv)
++ [Determinar ancho y alto deimagen en pixeles, python opencv](https://barcelonageeks.com/encontrar-la-resolucion-de-tamano-de-la-imagen-en-python/#:~:text=Usaremos%20una%20biblioteca%20llamada%20Pillow,variables%20usando%20la%20funci%C3%B3n%20img.)
