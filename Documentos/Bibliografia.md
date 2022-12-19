@@ -15,3 +15,4 @@ Al trabajar con el microcontrolador ESP32CAM buscamos usar la camara para captur
 + (https://www.intagri.com/articulos/poscosecha-comercializacion/papel-del-etileno-en-la-maduracion-de-frutos)
 + [Uso del nodo ui_media en Node-red para mostrar imagen en dahsboard](https://www.youtube.com/watch?v=hVX4Q8_fK7M)
 + [Subscripcion a MQTT desde Python](https://www.youtube.com/watch?v=T362losqJys)
++ [Calcular area en imagen Python opcen cv](https://es.stackoverflow.com/questions/419194/c%C3%A1lculo-de-area-con-opencv)
