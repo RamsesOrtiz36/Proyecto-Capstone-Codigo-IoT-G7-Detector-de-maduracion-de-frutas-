@@ -1,6 +1,6 @@
 [
     {
-        "id": "d71760ddcde33178",
+        "id": "7671d105bf42e351",
         "type": "tab",
         "label": "Flow de Pantalla de inicio ",
         "disabled": false,
@@ -8,138 +8,122 @@
         "env": []
     },
     {
-        "id": "a3a88172d5bd09a7",
-        "type": "group",
-        "z": "d71760ddcde33178",
-        "style": {
-            "stroke": "#999999",
-            "stroke-opacity": "1",
-            "fill": "none",
-            "fill-opacity": "1",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "5f31b81c6570a3cb",
-            "aa184da171e173cd",
-            "c6e584a18385d792"
-        ],
-        "x": 534,
-        "y": 79,
-        "w": 232,
-        "h": 202
-    },
-    {
-        "id": "5f31b81c6570a3cb",
-        "type": "ui_dropdown",
-        "z": "d71760ddcde33178",
-        "g": "a3a88172d5bd09a7",
+        "id": "a7c56abd22c2041e",
+        "type": "ui_media",
+        "z": "7671d105bf42e351",
+        "group": "7bee1305ef1bdcd4",
         "name": "",
-        "label": "Nombre de Fruta",
-        "tooltip": "",
-        "place": "Select option",
-        "group": "388100ccf6889e29",
+        "width": 0,
+        "height": 0,
         "order": 1,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "multiple": false,
-        "options": [
-            {
-                "label": "Fruta 1",
-                "value": "1",
-                "type": "str"
-            },
-            {
-                "label": "Fruta 2",
-                "value": "2",
-                "type": "str"
-            },
-            {
-                "label": "Fruta 3",
-                "value": "3",
-                "type": "str"
-            }
-        ],
-        "payload": "",
-        "topic": "topic",
-        "topicType": "msg",
-        "className": "",
-        "x": 650,
-        "y": 120,
+        "category": "",
+        "file": "Imagenes.png",
+        "layout": "expand",
+        "showcontrols": true,
+        "loop": true,
+        "onstart": false,
+        "scope": "local",
+        "tooltip": "",
+        "x": 810,
+        "y": 440,
         "wires": [
             []
         ]
     },
     {
-        "id": "aa184da171e173cd",
-        "type": "ui_dropdown",
-        "z": "d71760ddcde33178",
-        "g": "a3a88172d5bd09a7",
+        "id": "5c17522897a82198",
+        "type": "change",
+        "z": "7671d105bf42e351",
         "name": "",
-        "label": "Medir o calibrar",
-        "tooltip": "",
-        "place": "Select option",
-        "group": "388100ccf6889e29",
-        "order": 2,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "multiple": false,
-        "options": [
+        "rules": [
             {
-                "label": "Medición",
-                "value": "1",
-                "type": "str"
-            },
-            {
-                "label": "Calibración",
-                "value": "2",
-                "type": "str"
+                "t": "set",
+                "p": "mimetype",
+                "pt": "msg",
+                "to": "image/png",
+                "tot": "str"
             }
         ],
-        "payload": "",
-        "topic": "topic",
-        "topicType": "msg",
-        "className": "",
-        "x": 640,
-        "y": 180,
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 630,
+        "y": 440,
+        "wires": [
+            [
+                "a7c56abd22c2041e"
+            ]
+        ]
+    },
+    {
+        "id": "d4057833401fcdbe",
+        "type": "comment",
+        "z": "7671d105bf42e351",
+        "name": "Flow imagen de cámara original en dashboard",
+        "info": "# Flujo para manejo de imagen en dashboard\n -  Peticion por http\n -  Guardar archivo de buffer binario en archivo dentro de la computadora servidor\n",
+        "x": 170,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "476de4e1291bc5f9",
+        "type": "file in",
+        "z": "7671d105bf42e351",
+        "name": "",
+        "filename": "/home/ramses/ImagenPythonOriginal.png",
+        "filenameType": "str",
+        "format": "",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 360,
+        "y": 440,
+        "wires": [
+            [
+                "5c17522897a82198",
+                "5da63e7d480848ef",
+                "a0f8567afee68932"
+            ]
+        ]
+    },
+    {
+        "id": "5da63e7d480848ef",
+        "type": "image viewer",
+        "z": "7671d105bf42e351",
+        "name": "",
+        "width": 160,
+        "data": "payload",
+        "dataType": "msg",
+        "active": true,
+        "x": 610,
+        "y": 500,
         "wires": [
             []
         ]
     },
     {
-        "id": "c6e584a18385d792",
-        "type": "ui_button",
-        "z": "d71760ddcde33178",
-        "g": "a3a88172d5bd09a7",
-        "name": "",
-        "group": "388100ccf6889e29",
-        "order": 3,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "label": "Siguiente",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
+        "id": "a0f8567afee68932",
+        "type": "debug",
+        "z": "7671d105bf42e351",
+        "name": "debug 9",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
         "x": 620,
-        "y": 240,
-        "wires": [
-            []
-        ]
+        "y": 380,
+        "wires": []
     },
     {
-        "id": "577c17d2533ddfba",
+        "id": "3c9c4c8b667c1d16",
         "type": "inject",
-        "z": "d71760ddcde33178",
+        "z": "7671d105bf42e351",
         "name": "",
         "props": [
             {
@@ -157,139 +141,200 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 220,
-        "y": 460,
+        "x": 100,
+        "y": 440,
         "wires": [
             [
-                "3062a177a0463c1b"
+                "476de4e1291bc5f9"
             ]
         ]
     },
     {
-        "id": "3062a177a0463c1b",
-        "type": "http request",
-        "z": "d71760ddcde33178",
+        "id": "aa95ef5c2d1ab446",
+        "type": "ui_ui_control",
+        "z": "7671d105bf42e351",
         "name": "",
-        "method": "GET",
-        "ret": "bin",
-        "paytoqs": "ignore",
-        "url": "http://192.168.1.69/capture",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 410,
-        "y": 460,
+        "events": "change",
+        "x": 840,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a1cb503390c233c5",
+        "type": "function",
+        "z": "7671d105bf42e351",
+        "name": "function 14",
+        "func": "msg.payload = { \"tab\":\"Calibración\"}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 160,
         "wires": [
             [
-                "df7e2e7df527ae8b",
-                "0a9f7b5693f6123d",
-                "c5d4e709ae864900"
+                "aa95ef5c2d1ab446"
             ]
         ]
     },
     {
-        "id": "df7e2e7df527ae8b",
-        "type": "file",
-        "z": "d71760ddcde33178",
-        "name": "Imagenes.png",
-        "filename": "/home/ramses/Imagenes.png",
-        "filenameType": "str",
-        "appendNewline": true,
-        "createDir": false,
-        "overwriteFile": "true",
-        "encoding": "none",
-        "x": 640,
-        "y": 460,
+        "id": "ea491f1fd5870849",
+        "type": "ui_dropdown",
+        "z": "7671d105bf42e351",
+        "name": "",
+        "label": "Nombre de Fruta",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "388100ccf6889e29",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Fruta 1",
+                "value": "Fruta1",
+                "type": "str"
+            },
+            {
+                "label": "Fruta 2",
+                "value": "Fruta2",
+                "type": "str"
+            },
+            {
+                "label": "Fruta 3",
+                "value": "Fruta3",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 290,
+        "y": 80,
         "wires": [
             [
-                "f751ae518d29a257"
+                "f304e879c6c26609"
             ]
         ]
     },
     {
-        "id": "0a9f7b5693f6123d",
-        "type": "debug",
-        "z": "d71760ddcde33178",
-        "name": "debug 5",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 640,
-        "y": 420,
+        "id": "96099ccd6fb60b23",
+        "type": "ui_button",
+        "z": "7671d105bf42e351",
+        "name": "",
+        "group": "388100ccf6889e29",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Tomar datos para Calibrar",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 310,
+        "y": 160,
+        "wires": [
+            [
+                "a1cb503390c233c5"
+            ]
+        ]
+    },
+    {
+        "id": "661572f7cd1a30cb",
+        "type": "function",
+        "z": "7671d105bf42e351",
+        "name": "function 15",
+        "func": "msg.payload = { \"tab\":\"Medición\"}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 220,
+        "wires": [
+            [
+                "aa95ef5c2d1ab446"
+            ]
+        ]
+    },
+    {
+        "id": "d5d4b8d54d442e69",
+        "type": "ui_button",
+        "z": "7671d105bf42e351",
+        "name": "",
+        "group": "388100ccf6889e29",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Realizar la medición",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 300,
+        "y": 220,
+        "wires": [
+            [
+                "661572f7cd1a30cb"
+            ]
+        ]
+    },
+    {
+        "id": "f304e879c6c26609",
+        "type": "function",
+        "z": "7671d105bf42e351",
+        "name": "function 17",
+        "func": "global.set(\"NomFruta\",msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "feef4809bc9adcc0",
+        "type": "comment",
+        "z": "7671d105bf42e351",
+        "name": "Selectores de nombre fruta y procesos de  medición o calibración",
+        "info": "",
+        "x": 230,
+        "y": 20,
         "wires": []
     },
     {
-        "id": "c5d4e709ae864900",
-        "type": "image viewer",
-        "z": "d71760ddcde33178",
-        "name": "",
-        "width": 160,
-        "data": "payload",
-        "dataType": "msg",
-        "active": true,
-        "x": 610,
-        "y": 500,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "2de26be9834a5aec",
-        "type": "ui_media",
-        "z": "d71760ddcde33178",
-        "group": "7bee1305ef1bdcd4",
-        "name": "",
-        "width": 0,
-        "height": 0,
-        "order": 0,
-        "category": "video",
-        "file": "Imagenes.png",
-        "layout": "expand",
-        "showcontrols": true,
-        "loop": true,
-        "onstart": false,
-        "scope": "local",
-        "tooltip": "",
-        "x": 1010,
-        "y": 460,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "f751ae518d29a257",
-        "type": "change",
-        "z": "d71760ddcde33178",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "mimetype",
-                "pt": "msg",
-                "to": "image/png",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 850,
-        "y": 460,
-        "wires": [
-            [
-                "2de26be9834a5aec"
-            ]
-        ]
+        "id": "7bee1305ef1bdcd4",
+        "type": "ui_group",
+        "name": "Imagen",
+        "tab": "6f41e214f2994ede",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false,
+        "className": ""
     },
     {
         "id": "388100ccf6889e29",
@@ -299,17 +344,6 @@
         "order": 2,
         "disp": true,
         "width": "6",
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "7bee1305ef1bdcd4",
-        "type": "ui_group",
-        "name": "Imagen",
-        "tab": "6f41e214f2994ede",
-        "order": 1,
-        "disp": true,
-        "width": 12,
         "collapse": false,
         "className": ""
     },
