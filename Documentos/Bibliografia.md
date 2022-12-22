@@ -20,4 +20,5 @@ Al trabajar con el microcontrolador ESP32CAM buscamos usar la camara para captur
 + [Manejo de JSON en Python](https://www.freecodecamp.org/espanol/news/python-leer-archivo-json-como-cargar-json-desde-un-archivo-y-procesar-dumps/)
 + [Agregar columna a tabla de MySQL](https://donnierock.com/2012/12/18/anadir-columna-a-una-tabla-en-mysql-y-mariadb/)
 + [Cheat sheet MySQL comandos usados](https://www.mysqltutorial.org/mysql-cheat-sheet.aspx)
++ [Llamada a MysQL desde python](https://www.tutorialesprogramacionya.com/pythonya/detalleconcepto.php?punto=81&codigo=81&inicio=75)
 + 
