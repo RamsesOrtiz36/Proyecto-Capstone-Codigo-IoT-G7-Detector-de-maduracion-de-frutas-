@@ -1,1 +1,1062 @@
-
+[
+    {
+        "id": "73bbae48b0a4524a",
+        "type": "tab",
+        "label": "Nariz_Aromascopia",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "9bb2f0458c56f236",
+        "type": "mqtt in",
+        "z": "73bbae48b0a4524a",
+        "name": "",
+        "topic": "codigoIoT/ejemplo/mqtt",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "bcd3ae9b12fd9abf",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 120,
+        "wires": [
+            [
+                "3997be3c5ed44e65",
+                "bee89574e15309db"
+            ]
+        ]
+    },
+    {
+        "id": "bee89574e15309db",
+        "type": "debug",
+        "z": "73bbae48b0a4524a",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 370,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "3997be3c5ed44e65",
+        "type": "json",
+        "z": "73bbae48b0a4524a",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 410,
+        "y": 120,
+        "wires": [
+            [
+                "cd208e6b43ce7dbd",
+                "a27c1cc53c4f5297",
+                "2dfc16e643a3ee41",
+                "b60fcf54422d5e81",
+                "4e61bfe52e4d5a04",
+                "768139da307c4c30"
+            ]
+        ]
+    },
+    {
+        "id": "cd208e6b43ce7dbd",
+        "type": "function",
+        "z": "73bbae48b0a4524a",
+        "name": "ID",
+        "func": "msg.payload = msg.payload.id\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 120,
+        "wires": [
+            [
+                "f139764e40f20fa7"
+            ]
+        ]
+    },
+    {
+        "id": "a27c1cc53c4f5297",
+        "type": "function",
+        "z": "73bbae48b0a4524a",
+        "name": "temp",
+        "func": "msg.payload = msg.payload.temp;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 180,
+        "wires": [
+            [
+                "db8d4a9baf0ebb3e"
+            ]
+        ]
+    },
+    {
+        "id": "2dfc16e643a3ee41",
+        "type": "function",
+        "z": "73bbae48b0a4524a",
+        "name": "hum",
+        "func": "msg.payload = msg.payload.hum;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 240,
+        "wires": [
+            [
+                "d2ed91820a6bd8d8"
+            ]
+        ]
+    },
+    {
+        "id": "b60fcf54422d5e81",
+        "type": "function",
+        "z": "73bbae48b0a4524a",
+        "name": "Historico temperatura",
+        "func": "msg.label = \"Temperatura\";\nmsg.topic = \"Temperatura\";\nmsg.payload = msg.payload.temp;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 680,
+        "y": 320,
+        "wires": [
+            [
+                "ca1871d793616d54"
+            ]
+        ]
+    },
+    {
+        "id": "4e61bfe52e4d5a04",
+        "type": "function",
+        "z": "73bbae48b0a4524a",
+        "name": "Historico Humedad",
+        "func": "msg.label = \"Humedad\";\nmsg.topic = \"Humedad\";\nmsg.payload = msg.payload.hum;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 380,
+        "wires": [
+            [
+                "d604e963b4e8ced6"
+            ]
+        ]
+    },
+    {
+        "id": "768139da307c4c30",
+        "type": "function",
+        "z": "73bbae48b0a4524a",
+        "name": "Sobretemperatura",
+        "func": "if (msg.payload.temp > 30) {\n    msg.payload = \"true\";\n} else {\n    msg.payload = \"false\";\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 440,
+        "wires": [
+            [
+                "341dde3165b01a90"
+            ]
+        ]
+    },
+    {
+        "id": "341dde3165b01a90",
+        "type": "mqtt out",
+        "z": "73bbae48b0a4524a",
+        "name": "",
+        "topic": "codigoIoT/ejemplo/mqttin",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "bcd3ae9b12fd9abf",
+        "x": 950,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "db8d4a9baf0ebb3e",
+        "type": "ui_gauge",
+        "z": "73bbae48b0a4524a",
+        "name": "",
+        "group": "cda9029042251dbd",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temperatura",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "50",
+        "colors": [
+            "#10eaea",
+            "#73d216",
+            "#ff3900"
+        ],
+        "seg1": "25",
+        "seg2": "35",
+        "className": "",
+        "x": 830,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "d2ed91820a6bd8d8",
+        "type": "ui_gauge",
+        "z": "73bbae48b0a4524a",
+        "name": "",
+        "group": "cda9029042251dbd",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Humedad Relativa",
+        "label": "%",
+        "format": "{{value}}",
+        "min": "20",
+        "max": "90",
+        "colors": [
+            "#fce94f",
+            "#00b500",
+            "#1800ff"
+        ],
+        "seg1": "40",
+        "seg2": "60",
+        "className": "",
+        "x": 850,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "f139764e40f20fa7",
+        "type": "ui_text",
+        "z": "73bbae48b0a4524a",
+        "group": "cda9029042251dbd",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "ID:",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 810,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "d604e963b4e8ced6",
+        "type": "ui_chart",
+        "z": "73bbae48b0a4524a",
+        "name": "",
+        "group": "254d42d5582ad4b1",
+        "order": 1,
+        "width": 6,
+        "height": 4,
+        "label": "Historico Humedad Relativa",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": "3",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 960,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ca1871d793616d54",
+        "type": "ui_chart",
+        "z": "73bbae48b0a4524a",
+        "name": "",
+        "group": "254d42d5582ad4b1",
+        "order": 3,
+        "width": 6,
+        "height": 4,
+        "label": "Historico Temperatura",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": "3",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 940,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "335d6fe1983a902f",
+        "type": "mqtt in",
+        "z": "73bbae48b0a4524a",
+        "name": "",
+        "topic": "codigoIoT/ejemplo/mqtt/mq",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "bcd3ae9b12fd9abf",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 580,
+        "wires": [
+            [
+                "7455085b41f47903",
+                "502cea966f8cfb23"
+            ]
+        ]
+    },
+    {
+        "id": "7455085b41f47903",
+        "type": "json",
+        "z": "73bbae48b0a4524a",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 410,
+        "y": 580,
+        "wires": [
+            [
+                "ae9f2332e32466b7",
+                "25dc41cf39d3a0fc",
+                "e34f6bd3db1f384b",
+                "d497ccffe4537a7b",
+                "d8125bcd7939965f",
+                "32f03fecea22ee8d",
+                "8f4121b5110eb2d5",
+                "a5012be541e76fc3",
+                "8dbb5c5482bde6b7",
+                "4aa817730cd3bd40"
+            ]
+        ]
+    },
+    {
+        "id": "502cea966f8cfb23",
+        "type": "debug",
+        "z": "73bbae48b0a4524a",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 390,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "ae9f2332e32466b7",
+        "type": "function",
+        "z": "73bbae48b0a4524a",
+        "name": "",
+        "func": "msg.payload = msg.payload.mq2\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 580,
+        "wires": [
+            [
+                "985ef92f55108525"
+            ]
+        ]
+    },
+    {
+        "id": "25dc41cf39d3a0fc",
+        "type": "function",
+        "z": "73bbae48b0a4524a",
+        "name": "",
+        "func": "msg.payload = msg.payload.mq3\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 620,
+        "wires": [
+            [
+                "e966971de7777a56"
+            ]
+        ]
+    },
+    {
+        "id": "e34f6bd3db1f384b",
+        "type": "function",
+        "z": "73bbae48b0a4524a",
+        "name": "",
+        "func": "msg.payload = msg.payload.mq4\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 660,
+        "wires": [
+            [
+                "a27529cf8e804930"
+            ]
+        ]
+    },
+    {
+        "id": "d497ccffe4537a7b",
+        "type": "function",
+        "z": "73bbae48b0a4524a",
+        "name": "",
+        "func": "msg.payload = msg.payload.mq7\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 700,
+        "wires": [
+            [
+                "6cfdc138c9dd450a"
+            ]
+        ]
+    },
+    {
+        "id": "d8125bcd7939965f",
+        "type": "function",
+        "z": "73bbae48b0a4524a",
+        "name": "",
+        "func": "msg.payload = msg.payload.mq135\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 740,
+        "wires": [
+            [
+                "b7a127a1fd10290a"
+            ]
+        ]
+    },
+    {
+        "id": "985ef92f55108525",
+        "type": "ui_gauge",
+        "z": "73bbae48b0a4524a",
+        "name": "",
+        "group": "d55b7afa92999a78",
+        "order": 1,
+        "width": 6,
+        "height": 3,
+        "gtype": "gage",
+        "title": "MQ2 (GLP,Butano)",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "1000",
+        "colors": [
+            "#10eaea",
+            "#73d216",
+            "#ff3900"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 970,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "e966971de7777a56",
+        "type": "ui_gauge",
+        "z": "73bbae48b0a4524a",
+        "name": "",
+        "group": "d55b7afa92999a78",
+        "order": 2,
+        "width": 6,
+        "height": 3,
+        "gtype": "gage",
+        "title": "MQ3 (Alcohol)",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "1000",
+        "colors": [
+            "#10eaea",
+            "#73d216",
+            "#ff3900"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 980,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "a27529cf8e804930",
+        "type": "ui_gauge",
+        "z": "73bbae48b0a4524a",
+        "name": "",
+        "group": "d55b7afa92999a78",
+        "order": 3,
+        "width": 6,
+        "height": 3,
+        "gtype": "gage",
+        "title": "MQ4 (Metano)",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "1000",
+        "colors": [
+            "#10eaea",
+            "#73d216",
+            "#ff3900"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 980,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "6cfdc138c9dd450a",
+        "type": "ui_gauge",
+        "z": "73bbae48b0a4524a",
+        "name": "",
+        "group": "d55b7afa92999a78",
+        "order": 4,
+        "width": 6,
+        "height": 3,
+        "gtype": "gage",
+        "title": "MQ7 (Monoxido de carbono)",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "1000",
+        "colors": [
+            "#10eaea",
+            "#73d216",
+            "#ff3900"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 940,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "b7a127a1fd10290a",
+        "type": "ui_gauge",
+        "z": "73bbae48b0a4524a",
+        "name": "",
+        "group": "d55b7afa92999a78",
+        "order": 6,
+        "width": 8,
+        "height": 3,
+        "gtype": "gage",
+        "title": "MQ135 (Dioxido de Carbono)",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "1000",
+        "colors": [
+            "#10eaea",
+            "#73d216",
+            "#ff3900"
+        ],
+        "seg1": "25",
+        "seg2": "35",
+        "className": "",
+        "x": 940,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "d9466dd44707950c",
+        "type": "ui_chart",
+        "z": "73bbae48b0a4524a",
+        "name": "",
+        "group": "027da8b54e2b063d",
+        "order": 1,
+        "width": 8,
+        "height": 3,
+        "label": "Historico GLP, Metano",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "1000",
+        "removeOlder": "3",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 960,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "234c7857f5f9e168",
+        "type": "ui_chart",
+        "z": "73bbae48b0a4524a",
+        "name": "",
+        "group": "027da8b54e2b063d",
+        "order": 2,
+        "width": 8,
+        "height": 3,
+        "label": "Historico Alcohol (C₂H₆O)",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "1000",
+        "removeOlder": "3",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 950,
+        "y": 820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b4510a5cd3cd17cf",
+        "type": "ui_chart",
+        "z": "73bbae48b0a4524a",
+        "name": "",
+        "group": "027da8b54e2b063d",
+        "order": 3,
+        "width": 8,
+        "height": 3,
+        "label": "Historico CO2 y CO",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "1000",
+        "removeOlder": "3",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 970,
+        "y": 860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "32f03fecea22ee8d",
+        "type": "function",
+        "z": "73bbae48b0a4524a",
+        "name": "mq2",
+        "func": "msg.label = \"mq2\";\nmsg.topic = \"mq2\";\nmsg.payload = msg.payload.mq2;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 780,
+        "wires": [
+            [
+                "d9466dd44707950c"
+            ]
+        ]
+    },
+    {
+        "id": "8f4121b5110eb2d5",
+        "type": "function",
+        "z": "73bbae48b0a4524a",
+        "name": "mq3",
+        "func": "msg.label = \"mq3\";\nmsg.topic = \"mq3\";\nmsg.payload = msg.payload.mq3;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 820,
+        "wires": [
+            [
+                "234c7857f5f9e168"
+            ]
+        ]
+    },
+    {
+        "id": "a5012be541e76fc3",
+        "type": "function",
+        "z": "73bbae48b0a4524a",
+        "name": "mq4",
+        "func": "msg.label = \"mq4\";\nmsg.topic = \"mq4\";\nmsg.payload = msg.payload.mq4;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 860,
+        "wires": [
+            [
+                "d9466dd44707950c"
+            ]
+        ]
+    },
+    {
+        "id": "4aa817730cd3bd40",
+        "type": "function",
+        "z": "73bbae48b0a4524a",
+        "name": "mq7",
+        "func": "msg.label = \"mq7\";\nmsg.topic = \"mq7\";\nmsg.payload = msg.payload.mq7;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 900,
+        "wires": [
+            [
+                "b4510a5cd3cd17cf"
+            ]
+        ]
+    },
+    {
+        "id": "8dbb5c5482bde6b7",
+        "type": "function",
+        "z": "73bbae48b0a4524a",
+        "name": "mq135",
+        "func": "msg.label = \"mq135\";\nmsg.topic = \"mq135\";\nmsg.payload = msg.payload.mq135;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 940,
+        "wires": [
+            [
+                "b4510a5cd3cd17cf"
+            ]
+        ]
+    },
+    {
+        "id": "69d783601a0501c2",
+        "type": "ui_spacer",
+        "z": "73bbae48b0a4524a",
+        "name": "spacer",
+        "group": "c17bd8a20d24a225",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "9ab97b24fd71f3b6",
+        "type": "ui_spacer",
+        "z": "73bbae48b0a4524a",
+        "name": "spacer",
+        "group": "254d42d5582ad4b1",
+        "order": 2,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "e2e035ac51a90a8e",
+        "type": "ui_spacer",
+        "z": "73bbae48b0a4524a",
+        "name": "spacer",
+        "group": "d55b7afa92999a78",
+        "order": 5,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "782348e98882f2e4",
+        "type": "ui_spacer",
+        "z": "73bbae48b0a4524a",
+        "name": "spacer",
+        "group": "d55b7afa92999a78",
+        "order": 7,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "4e52583b9ba7d325",
+        "type": "ui_spacer",
+        "z": "73bbae48b0a4524a",
+        "name": "spacer",
+        "group": "d55b7afa92999a78",
+        "order": 8,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "bf544a939fe789e1",
+        "type": "ui_spacer",
+        "z": "73bbae48b0a4524a",
+        "name": "spacer",
+        "group": "d55b7afa92999a78",
+        "order": 9,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "b0d7c0fd0bb46e65",
+        "type": "ui_spacer",
+        "z": "73bbae48b0a4524a",
+        "name": "spacer",
+        "group": "d55b7afa92999a78",
+        "order": 10,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "735782bdefdcb5e6",
+        "type": "ui_spacer",
+        "z": "73bbae48b0a4524a",
+        "name": "spacer",
+        "group": "d55b7afa92999a78",
+        "order": 11,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "bcd3ae9b12fd9abf",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "cda9029042251dbd",
+        "type": "ui_group",
+        "name": "Graficas",
+        "tab": "585813ac5d9f5aaa",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "254d42d5582ad4b1",
+        "type": "ui_group",
+        "name": "Historico",
+        "tab": "585813ac5d9f5aaa",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d55b7afa92999a78",
+        "type": "ui_group",
+        "name": "Sensores MQ's",
+        "tab": "585813ac5d9f5aaa",
+        "order": 3,
+        "disp": true,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "027da8b54e2b063d",
+        "type": "ui_group",
+        "name": "Historicos MQ's",
+        "tab": "585813ac5d9f5aaa",
+        "order": 4,
+        "disp": true,
+        "width": 8,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "c17bd8a20d24a225",
+        "type": "ui_group",
+        "name": "Registro",
+        "tab": "63ee76d0cd6446c1",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "585813ac5d9f5aaa",
+        "type": "ui_tab",
+        "name": "Nariz_aromascopia",
+        "icon": "dashboard",
+        "order": 7,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "63ee76d0cd6446c1",
+        "type": "ui_tab",
+        "d": true,
+        "name": "Tab 7",
+        "icon": "dashboard",
+        "order": 7,
+        "disabled": false,
+        "hidden": false
+    }
+]
