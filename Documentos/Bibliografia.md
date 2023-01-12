@@ -18,4 +18,8 @@ Al trabajar con el microcontrolador ESP32CAM buscamos usar la camara para captur
 + [Calcular area en imagen Python opcen cv](https://es.stackoverflow.com/questions/419194/c%C3%A1lculo-de-area-con-opencv)
 + [Determinar ancho y alto deimagen en pixeles, python opencv](https://barcelonageeks.com/encontrar-la-resolucion-de-tamano-de-la-imagen-en-python/#:~:text=Usaremos%20una%20biblioteca%20llamada%20Pillow,variables%20usando%20la%20funci%C3%B3n%20img.)
 + [Manejo de JSON en Python](https://www.freecodecamp.org/espanol/news/python-leer-archivo-json-como-cargar-json-desde-un-archivo-y-procesar-dumps/)
-+  
++ [Agregar columna a tabla de MySQL](https://donnierock.com/2012/12/18/anadir-columna-a-una-tabla-en-mysql-y-mariadb/)
++ [Cheat sheet MySQL comandos usados](https://www.mysqltutorial.org/mysql-cheat-sheet.aspx)
++ [Llamada a MysQL desde python](https://www.tutorialesprogramacionya.com/pythonya/detalleconcepto.php?punto=81&codigo=81&inicio=75)
++ [Manejo de contenedores tipo lista en python](https://ellibrodepython.com/listas-en-python)
++ 

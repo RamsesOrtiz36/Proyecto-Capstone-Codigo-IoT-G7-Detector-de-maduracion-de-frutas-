@@ -11,6 +11,7 @@
         "id": "2ad1a0cc5e0051b2",
         "type": "group",
         "z": "db493b0d9fc86436",
+        "g": "3ddf0d611094dde1",
         "style": {
             "stroke": "#999999",
             "stroke-opacity": "1",
@@ -29,7 +30,7 @@
             "7ddd31859dc6ae61"
         ],
         "x": 54,
-        "y": 179,
+        "y": 319,
         "w": 372,
         "h": 202
     },
@@ -37,6 +38,7 @@
         "id": "f16e2991f03cc84e",
         "type": "group",
         "z": "db493b0d9fc86436",
+        "g": "3ddf0d611094dde1",
         "style": {
             "stroke": "#999999",
             "stroke-opacity": "1",
@@ -55,9 +57,106 @@
             "d74e476bc877f59a"
         ],
         "x": 454,
-        "y": 179,
+        "y": 319,
         "w": 382,
         "h": 202
+    },
+    {
+        "id": "8c1118d9ef159c00",
+        "type": "group",
+        "z": "db493b0d9fc86436",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "b88346a062ed0cea",
+            "b76b572419a36999",
+            "55252aa6c2325bb7",
+            "d29ec5424af3cb72",
+            "06c60d5bf97154c5",
+            "a7a84110301b1fba"
+        ],
+        "x": 14,
+        "y": 719,
+        "w": 872,
+        "h": 222
+    },
+    {
+        "id": "3f4ef63730d59939",
+        "type": "group",
+        "z": "db493b0d9fc86436",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "38e7231835573669",
+            "bee00f3827bcd29e",
+            "f6e776b258d773e9",
+            "1b570e24e186d7ad",
+            "edcf66d33ff41680"
+        ],
+        "x": 14,
+        "y": 559,
+        "w": 892,
+        "h": 142
+    },
+    {
+        "id": "3ddf0d611094dde1",
+        "type": "group",
+        "z": "db493b0d9fc86436",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "ef315eee59fa0e43",
+            "2ad1a0cc5e0051b2",
+            "f16e2991f03cc84e"
+        ],
+        "x": 28,
+        "y": 239,
+        "w": 834,
+        "h": 308
+    },
+    {
+        "id": "15b0d2a38d68fdd2",
+        "type": "group",
+        "z": "db493b0d9fc86436",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "2dfd450ac3fc9a89",
+            "1f09c65e16873261",
+            "6ed0bcf6df2800e4"
+        ],
+        "x": 874,
+        "y": 259,
+        "w": 352,
+        "h": 122
     },
     {
         "id": "c88aa6a0e205e747",
@@ -72,7 +171,7 @@
         "width": 0,
         "height": 0,
         "passthru": true,
-        "outs": "all",
+        "outs": "end",
         "topic": "topic",
         "topicType": "msg",
         "min": 0,
@@ -80,7 +179,7 @@
         "step": 1,
         "className": "",
         "x": 150,
-        "y": 220,
+        "y": 360,
         "wires": [
             [
                 "66be8372557bb1a9"
@@ -100,7 +199,7 @@
         "width": 0,
         "height": 0,
         "passthru": true,
-        "outs": "all",
+        "outs": "end",
         "topic": "topic",
         "topicType": "msg",
         "min": 0,
@@ -108,7 +207,7 @@
         "step": 1,
         "className": "",
         "x": 150,
-        "y": 280,
+        "y": 420,
         "wires": [
             [
                 "4784b28b0601d41c"
@@ -128,7 +227,7 @@
         "width": 0,
         "height": 0,
         "passthru": true,
-        "outs": "all",
+        "outs": "end",
         "topic": "topic",
         "topicType": "msg",
         "min": 0,
@@ -136,7 +235,7 @@
         "step": 1,
         "className": "",
         "x": 150,
-        "y": 340,
+        "y": 480,
         "wires": [
             [
                 "85bdb1b9ff3c3200"
@@ -164,7 +263,7 @@
         "step": 1,
         "className": "",
         "x": 550,
-        "y": 220,
+        "y": 360,
         "wires": [
             [
                 "b1bf4f3bb22fba71"
@@ -184,7 +283,7 @@
         "width": 0,
         "height": 0,
         "passthru": true,
-        "outs": "all",
+        "outs": "end",
         "topic": "topic",
         "topicType": "msg",
         "min": 0,
@@ -192,7 +291,7 @@
         "step": 1,
         "className": "",
         "x": 550,
-        "y": 280,
+        "y": 420,
         "wires": [
             [
                 "18cf87ee93bd8e49"
@@ -212,7 +311,7 @@
         "width": 0,
         "height": 0,
         "passthru": true,
-        "outs": "all",
+        "outs": "end",
         "topic": "topic",
         "topicType": "msg",
         "min": 0,
@@ -220,7 +319,7 @@
         "step": 1,
         "className": "",
         "x": 550,
-        "y": 340,
+        "y": 480,
         "wires": [
             [
                 "d74e476bc877f59a"
@@ -268,10 +367,10 @@
         "topicType": "msg",
         "className": "",
         "x": 500,
-        "y": 140,
+        "y": 200,
         "wires": [
             [
-                "0310095812ad17d4"
+                "4ba5e4fdb45d9afe"
             ]
         ]
     },
@@ -296,13 +395,9 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 110,
-        "y": 120,
+        "y": 160,
         "wires": [
-            [
-                "4cedacacee264cc4",
-                "806c41b568c325cf",
-                "35f76193779f8e40"
-            ]
+            []
         ]
     },
     {
@@ -310,15 +405,15 @@
         "type": "debug",
         "z": "db493b0d9fc86436",
         "name": "debug 6",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 720,
-        "y": 40,
+        "x": 900,
+        "y": 60,
         "wires": []
     },
     {
@@ -334,7 +429,7 @@
         "finalize": "",
         "libs": [],
         "x": 340,
-        "y": 220,
+        "y": 360,
         "wires": [
             []
         ]
@@ -347,11 +442,12 @@
         "property": "payload",
         "action": "obj",
         "pretty": false,
-        "x": 550,
-        "y": 40,
+        "x": 690,
+        "y": 60,
         "wires": [
             [
-                "08827992d2c233e6"
+                "08827992d2c233e6",
+                "b189f973b4cae558"
             ]
         ]
     },
@@ -359,15 +455,15 @@
         "id": "4cedacacee264cc4",
         "type": "function",
         "z": "db493b0d9fc86436",
-        "name": "function 5",
-        "func": "msg.payload = { Hmin: global.get(\"hmin\"), Vmin: global.get(\"vmin\"), Smin: global.get(\"smin\")};\nreturn msg;\n\n",
+        "name": "Valores Min y Max de HSV",
+        "func": "msg.payload = { Hmin: global.get(\"hmin\"), Vmin: global.get(\"vmin\"), Smin: global.get(\"smin\"), Hmax: global.get(\"hmax\"), Vmax: global.get(\"vmax\"), Smax: global.get(\"smax\"), G_Maduracion: global.get(\"GrdMaduracion\")};\nreturn msg;\n\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 400,
-        "y": 40,
+        "x": 460,
+        "y": 60,
         "wires": [
             [
                 "3e2061fbb4401ef5"
@@ -387,7 +483,7 @@
         "finalize": "",
         "libs": [],
         "x": 340,
-        "y": 280,
+        "y": 420,
         "wires": [
             []
         ]
@@ -405,7 +501,7 @@
         "finalize": "",
         "libs": [],
         "x": 340,
-        "y": 340,
+        "y": 480,
         "wires": [
             []
         ]
@@ -423,7 +519,7 @@
         "finalize": "",
         "libs": [],
         "x": 740,
-        "y": 220,
+        "y": 360,
         "wires": [
             []
         ]
@@ -441,7 +537,7 @@
         "finalize": "",
         "libs": [],
         "x": 740,
-        "y": 280,
+        "y": 420,
         "wires": [
             []
         ]
@@ -459,82 +555,414 @@
         "finalize": "",
         "libs": [],
         "x": 740,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b189f973b4cae558",
+        "type": "mqtt out",
+        "z": "db493b0d9fc86436",
+        "name": "",
+        "topic": "codigoIoT/mqtt/Detector/Min_Max_HSV",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "9c0ed33ac6aef07c",
+        "x": 980,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "4ba5e4fdb45d9afe",
+        "type": "function",
+        "z": "db493b0d9fc86436",
+        "name": "function 12",
+        "func": "global.set(\"GrdMaduracion\",msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "38e7231835573669",
+        "type": "change",
+        "z": "db493b0d9fc86436",
+        "g": "3f4ef63730d59939",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "mimetype",
+                "pt": "msg",
+                "to": "image/png",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 650,
+        "y": 660,
+        "wires": [
+            [
+                "edcf66d33ff41680"
+            ]
+        ]
+    },
+    {
+        "id": "bee00f3827bcd29e",
+        "type": "file in",
+        "z": "db493b0d9fc86436",
+        "g": "3f4ef63730d59939",
+        "name": "",
+        "filename": "/home/ramses/ImagenPythonRes.png",
+        "filenameType": "str",
+        "format": "",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 370,
+        "y": 660,
+        "wires": [
+            [
+                "38e7231835573669"
+            ]
+        ]
+    },
+    {
+        "id": "f6e776b258d773e9",
+        "type": "inject",
+        "z": "db493b0d9fc86436",
+        "g": "3f4ef63730d59939",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 660,
+        "wires": [
+            [
+                "bee00f3827bcd29e"
+            ]
+        ]
+    },
+    {
+        "id": "1b570e24e186d7ad",
+        "type": "comment",
+        "z": "db493b0d9fc86436",
+        "g": "3f4ef63730d59939",
+        "name": "Imagen con filtro construido de hsv aplicado",
+        "info": "",
+        "x": 210,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "1d4eab0b465b403b",
+        "type": "comment",
+        "z": "db493b0d9fc86436",
+        "name": "guarda valores en MySQL y envia a Python por MQTT",
+        "info": "",
+        "x": 220,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "ef315eee59fa0e43",
+        "type": "comment",
+        "z": "db493b0d9fc86436",
+        "g": "3ddf0d611094dde1",
+        "name": "Barras deslizantes para valores de HSV Min y Max",
+        "info": "",
+        "x": 450,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "1c5bf89d2ad6968e",
+        "type": "inject",
+        "z": "db493b0d9fc86436",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 100,
+        "wires": [
+            [
+                "4cedacacee264cc4",
+                "35f76193779f8e40"
+            ]
+        ]
+    },
+    {
+        "id": "edcf66d33ff41680",
+        "type": "ui_media",
+        "z": "db493b0d9fc86436",
+        "g": "3f4ef63730d59939",
+        "group": "51806a11c5d70f82",
+        "name": "",
+        "width": 0,
+        "height": 0,
+        "order": 0,
+        "category": "",
+        "file": "",
+        "layout": "adjust",
+        "showcontrols": true,
+        "loop": true,
+        "onstart": false,
+        "scope": "local",
+        "tooltip": "",
+        "x": 830,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b88346a062ed0cea",
+        "type": "debug",
+        "z": "db493b0d9fc86436",
+        "g": "8c1118d9ef159c00",
+        "name": "debug 10",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "b76b572419a36999",
+        "type": "exec",
+        "z": "db493b0d9fc86436",
+        "g": "8c1118d9ef159c00",
+        "command": "python3 ~/Documentos/GitHubRamses/Proyecto-Capstone-Codigo-IoT-G7-Detector-de-maduracion-de-frutas-/MQTTsubSimple.py",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Programa python calibración",
+        "x": 560,
+        "y": 840,
+        "wires": [
+            [
+                "b88346a062ed0cea"
+            ],
+            [
+                "b88346a062ed0cea"
+            ],
+            [
+                "b88346a062ed0cea"
+            ]
+        ]
+    },
+    {
+        "id": "55252aa6c2325bb7",
+        "type": "comment",
+        "z": "db493b0d9fc86436",
+        "g": "8c1118d9ef159c00",
+        "name": "Ejecucion de programa python",
+        "info": "",
+        "x": 220,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "d29ec5424af3cb72",
+        "type": "ui_button",
+        "z": "db493b0d9fc86436",
+        "g": "8c1118d9ef159c00",
+        "name": "",
+        "group": "51806a11c5d70f82",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Iniciar",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 90,
+        "y": 840,
+        "wires": [
+            [
+                "b76b572419a36999"
+            ]
+        ]
+    },
+    {
+        "id": "06c60d5bf97154c5",
+        "type": "ui_button",
+        "z": "db493b0d9fc86436",
+        "g": "8c1118d9ef159c00",
+        "name": "",
+        "group": "51806a11c5d70f82",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Detener",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "kill",
+        "payloadType": "str",
+        "topic": "kill",
+        "topicType": "msg",
+        "x": 100,
+        "y": 900,
+        "wires": [
+            [
+                "a7a84110301b1fba"
+            ]
+        ]
+    },
+    {
+        "id": "a7a84110301b1fba",
+        "type": "change",
+        "z": "db493b0d9fc86436",
+        "g": "8c1118d9ef159c00",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "kill",
+                "pt": "msg",
+                "to": "SIGQUIT",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 250,
+        "y": 900,
+        "wires": [
+            [
+                "b76b572419a36999"
+            ]
+        ]
+    },
+    {
+        "id": "2dfd450ac3fc9a89",
+        "type": "ui_numeric",
+        "z": "db493b0d9fc86436",
+        "g": "15b0d2a38d68fdd2",
+        "name": "",
+        "label": "Dias restantes",
+        "tooltip": "",
+        "group": "eee61006b420f724",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "365",
+        "step": 1,
+        "className": "",
+        "x": 980,
+        "y": 340,
+        "wires": [
+            [
+                "1f09c65e16873261"
+            ]
+        ]
+    },
+    {
+        "id": "1f09c65e16873261",
+        "type": "function",
+        "z": "db493b0d9fc86436",
+        "g": "15b0d2a38d68fdd2",
+        "name": "DiasRest",
+        "func": "global.set(\"DiasRest\",msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1140,
         "y": 340,
         "wires": [
             []
         ]
     },
     {
-        "id": "6414ce45c9fe1e9f",
-        "type": "debug",
+        "id": "6ed0bcf6df2800e4",
+        "type": "comment",
         "z": "db493b0d9fc86436",
-        "name": "debug 7",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 720,
-        "y": 100,
-        "wires": []
-    },
-    {
-        "id": "487a7dfc65eed6dc",
-        "type": "json",
-        "z": "db493b0d9fc86436",
-        "name": "",
-        "property": "payload",
-        "action": "obj",
-        "pretty": false,
-        "x": 550,
-        "y": 100,
-        "wires": [
-            [
-                "6414ce45c9fe1e9f"
-            ]
-        ]
-    },
-    {
-        "id": "806c41b568c325cf",
-        "type": "function",
-        "z": "db493b0d9fc86436",
-        "name": "function 11",
-        "func": "msg.payload = { Hmax: global.get(\"hmax\"), Vmax: global.get(\"vmax\"), Smax: global.get(\"smax\")};\nreturn msg;\n\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 400,
-        "y": 100,
-        "wires": [
-            [
-                "487a7dfc65eed6dc"
-            ]
-        ]
-    },
-    {
-        "id": "0310095812ad17d4",
-        "type": "debug",
-        "z": "db493b0d9fc86436",
-        "name": "debug 8",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 720,
-        "y": 140,
+        "g": "15b0d2a38d68fdd2",
+        "name": "Dias restantes de vida util",
+        "info": "El usuaro le da dias de vida util restante como parte de la calibración",
+        "x": 1010,
+        "y": 300,
         "wires": []
     },
     {
         "id": "1871e864c2a25e3e",
         "type": "ui_group",
-        "name": "Mínimos HSV",
+        "name": "HSV minimos",
         "tab": "9e377d67f4a256c5",
         "order": 2,
         "disp": true,
@@ -559,6 +987,44 @@
         "name": "Selector maduración",
         "tab": "9e377d67f4a256c5",
         "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "9c0ed33ac6aef07c",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "51806a11c5d70f82",
+        "type": "ui_group",
+        "name": "Imagen",
+        "tab": "9e377d67f4a256c5",
+        "order": 1,
         "disp": true,
         "width": "6",
         "collapse": false,
