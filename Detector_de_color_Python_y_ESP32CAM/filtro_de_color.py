@@ -11,7 +11,7 @@ def nothing(x):
     pass
 
 #global datos_calibracion
-datos_calibracion= {"Hmin":0,"Vmin":0,"Smin":0,"Hmax":255,"Vmax":255,"Smax":255,"G_Maduracion":"Verde"}
+#datos_calibracion= {"Hmin":0,"Vmin":0,"Smin":0,"Hmax":255,"Vmax":255,"Smax":255,"G_Maduracion":"Verde"}
 
 while True:                                                                 #mientras sea verdadero se ejecuta el codigo dentro        
 
@@ -39,15 +39,15 @@ while True:                                                                 #mie
     imgnp=np.array(bytearray(img_resp.read()),dtype=np.uint8)               #contruye una imagen con formato unit8 desde la anterior
     frame=cv2.imdecode(imgnp,-1)                                            #construye la imagen "frame"             
         #_, frame = cap.read()    
+    hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)                            #convierte "frame" de BGR a HSV
+
     l_h = datos_calibracion["Hmin"]
     l_s = datos_calibracion["Smin"]  
     l_v = datos_calibracion["Vmin"]                                             #Valores de parametros HSV minimos                                                                                      
     u_h = datos_calibracion["Hmax"]
     u_s = datos_calibracion["Smax"]
     u_v = datos_calibracion["Vmax"]                                             #Valores de parametros HSV maximos
-    
-    hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)                            #convierte "frame" de BGR a HSV
-
+      
     l_b = np.array([l_h, l_s, l_v])                                         #construye un array con los valores minimos de hsv
     u_b = np.array([u_h, u_s, u_v])                                         #construye un array con los valores maximos de hsv
         
@@ -67,8 +67,7 @@ while True:                                                                 #mie
         #       cv2.putText(frame,"blue",(cx-20, cy-20),cv2.FONT_HERSHEY_SIMPLEX, 1, (0,0,255),2)
             
     res = cv2.bitwise_and(frame, frame, mask=mask)                          #Aplica una comparación AND elemento a elemento de las matrices de imagen frame y mask
-    
-        
+       
     cv2.imshow("live transmission", frame)
     cv2.imshow("mask", mask)
     cv2.imshow("res", res)

@@ -13,7 +13,7 @@ def nothing(x):
     pass
 
 while True:                                                                                  #biri ciclo while para que se mantenga rebizando la coneccion a MQTT                       
-    url='http://192.168.1.70/cam-lo.jpg'                                            #Asigna la URL a la cual se conecta para capturar la imagen 
+    url='http://192.168.1.69/cam-lo.jpg'                                            #Asigna la URL a la cual se conecta para capturar la imagen 
     ##'''cam.bmp / cam-lo.jpg /cam-hi.jpg / cam.mjpeg '''
     cv2.namedWindow("live transmission", cv2.WINDOW_AUTOSIZE)                   #Construye la ventana de visualización de la imagen captada de la url   
     img_resp=urllib.request.urlopen(url)                                    #Abre la imagen de la URL            
