@@ -1,4 +1,15 @@
- 
+""" 
+Programa creado por Ramsés Ortiz Castro
+Fecha: 20 de diciembre del 2022
+Este programa se usa para crear una capa filtro de la imagen de la URL, se visualiza el filtro, 
+usa los parametros enviados desde Node Red por MQTT a python para crear el filtro.
+
+Usa bibliotecas para Mqtt, URL, manejo de arreglos numpy, manejo de JSON, 
+manipulación de imagenes con CV2
+
+Las imagenes creadas con filtro aplicado se guardan en la computadora hospedante 
+y node-red toma los archivos para visualizarlos. 
+"""
 import paho.mqtt.client as mqtt
 import paho.mqtt.subscribe as subscribe
 import numpy as np
@@ -15,7 +26,7 @@ def nothing(x):
 while True:                                                                                  #biri ciclo while para que se mantenga rebizando la coneccion a MQTT                       
     url='http://192.168.1.69/cam-lo.jpg'                                            #Asigna la URL a la cual se conecta para capturar la imagen 
     ##'''cam.bmp / cam-lo.jpg /cam-hi.jpg / cam.mjpeg '''
-    cv2.namedWindow("live transmission", cv2.WINDOW_AUTOSIZE)                   #Construye la ventana de visualización de la imagen captada de la url   
+    #cv2.namedWindow("live transmission", cv2.WINDOW_AUTOSIZE)               #Construye la ventana de visualización de la imagen captada de la url   
     img_resp=urllib.request.urlopen(url)                                    #Abre la imagen de la URL            
     imgnp=np.array(bytearray(img_resp.read()),dtype=np.uint8)               #contruye una imagen con formato unit8 desde la anterior
     frame=cv2.imdecode(imgnp,-1)                                            #construye la imagen "frame"             
