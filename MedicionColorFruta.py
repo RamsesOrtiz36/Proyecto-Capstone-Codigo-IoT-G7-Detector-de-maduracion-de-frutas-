@@ -38,14 +38,15 @@ cursor1=conexion1.cursor()                                                      
 
 def nothing(x):                                                             
     pass
-
+#"""
 #Argumentos desde Node-Red
 # Parser
 parser = argparse.ArgumentParser()
 parser.add_argument("NombreFruta", help="Nombre de la fruta seleccionada desde Node red")
 args = parser.parse_args()
 Fruta = args.NombreFruta
-
+#"""
+#Fruta="Fruta2"
 #Adquiere la imagen desde URL
 #while True:                                                            #ciclo while para que se mantenga rebizando la coneccion a MQTT                       
 url='http://192.168.1.69/cam-lo.jpg'                                    #Asigna la URL a la cual se conecta para capturar la imagen 
@@ -57,13 +58,14 @@ frame=cv2.imdecode(imgnp,-1)                                            #constru
 hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)                            #convierte "frame" de BGR a HSV
 
 #Entra a MySQL y toma los registros con el nombre de fruta
-cursor1.execute("SELECT id, HSV, DiasRest FROM Calibraciones WHERE fruta='"+Fruta+"'")    #Petición a MySQL para tomar los valores de los registros de la tabla que cumplen los requisitos
+cursor1.execute("SELECT id, HSV, DiasRest,Maduración FROM Calibraciones WHERE fruta='"+Fruta+"'")    #Petición a MySQL para tomar los valores de los registros de la tabla que cumplen los requisitos
 DatosID=cursor1.fetchall()                                                          #Los registros tomados se almacenana en una variable de python
 
 """Tomar 1 registro, crear el filtro, aplicarlo, determinar area y guardar el ID del
     registro que tenga el area más grande
 """
 AreaMax=0
+DiasRestareaMax=0
 #Toma una calibración para construir el filtro y aplicarlo, luego repite con la siguiente calibración
 for i in range(0,len(DatosID)):
     datos_calibracionBD = json.loads(DatosID[i][1])                                       #Toma el valor de HSV de un registro y lo guarda como JSON en datos_calibración
@@ -85,9 +87,13 @@ for i in range(0,len(DatosID)):
         areaTotal+=cv2.contourArea(c)                                             #determina el area acumulada de cada contorno
     if (AreaMax<areaTotal):
         AreaMax=areaTotal
-        DiasRestareaMax=json.loads(DatosID[i][2])
+        DiasRestareaMax=DatosID[i][2]
+        MaduracionAreaMax=DatosID[i][3]
 
-print(DiasRestareaMax)
+x=dict(DiasRestareaM=DiasRestareaMax, MaduracionM= MaduracionAreaMax)
+Resultados=json.dumps(x)
+print(Resultados)
+
 
 
 #cv2.imshow("live transmission", frame)                                  #Crea ventana para ver imagen original "frame"
