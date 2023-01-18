@@ -38,15 +38,15 @@ cursor1=conexion1.cursor()                                                      
 
 def nothing(x):                                                             
     pass
-#"""
+"""
 #Argumentos desde Node-Red
 # Parser
 parser = argparse.ArgumentParser()
 parser.add_argument("NombreFruta", help="Nombre de la fruta seleccionada desde Node red")
 args = parser.parse_args()
 Fruta = args.NombreFruta
-#"""
-#Fruta="Fruta2"
+"""
+Fruta="Naranja"
 #Adquiere la imagen desde URL
 #while True:                                                            #ciclo while para que se mantenga rebizando la coneccion a MQTT                       
 url='http://192.168.1.69/cam-lo.jpg'                                    #Asigna la URL a la cual se conecta para capturar la imagen 
@@ -60,7 +60,7 @@ hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)                            #convier
 #Entra a MySQL y toma los registros con el nombre de fruta
 cursor1.execute("SELECT id, HSV, DiasRest,Maduración FROM Calibraciones WHERE fruta='"+Fruta+"'")    #Petición a MySQL para tomar los valores de los registros de la tabla que cumplen los requisitos
 DatosID=cursor1.fetchall()                                                          #Los registros tomados se almacenana en una variable de python
-
+#print(DatosID)
 """Tomar 1 registro, crear el filtro, aplicarlo, determinar area y guardar el ID del
     registro que tenga el area más grande
 """
@@ -69,6 +69,7 @@ DiasRestareaMax=0
 #Toma una calibración para construir el filtro y aplicarlo, luego repite con la siguiente calibración
 for i in range(0,len(DatosID)):
     datos_calibracionBD = json.loads(DatosID[i][1])                                       #Toma el valor de HSV de un registro y lo guarda como JSON en datos_calibración
+    #print(datos_calibracionBD)
     l_h = datos_calibracionBD["Hmin"]                  #pasa el contenido del msg.payload a variables individuales
     l_s = datos_calibracionBD["Smin"]  
     l_v = datos_calibracionBD["Vmin"]                                             #Valores de parametros HSV minimos                                                                                      
@@ -85,10 +86,16 @@ for i in range(0,len(DatosID)):
     cnts, _ = cv2.findContours(mask,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)  #Encuentra los contornos de las areas que cumplen con la mascara, devuelve dos cosas, los contornos y la jerarquia de contrnos
     for c in cnts:                                                          #cnt es un arrelo que contiene el contorno, para cada c en el arreglo
         areaTotal+=cv2.contourArea(c)                                             #determina el area acumulada de cada contorno
-    if (AreaMax<areaTotal):
+    if (AreaMax<=areaTotal):
         AreaMax=areaTotal
         DiasRestareaMax=DatosID[i][2]
         MaduracionAreaMax=DatosID[i][3]
+    """   
+        print("id= ",DatosID[i][0])
+        print(DiasRestareaMax)
+        print(MaduracionAreaMax)
+    print("i= ",i)
+    """
 
 x=dict(DiasRestareaM=DiasRestareaMax, MaduracionM= MaduracionAreaMax)
 Resultados=json.dumps(x)
