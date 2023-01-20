@@ -59,7 +59,7 @@ if Mediciones!="":
     for i in range(0,len(DatosIDLista)):
         DatosIDJSON= json.loads(DatosIDLista[i][1])           #Toma el elemento de la lista y lo convierte a "diccionario" que funcionca como JSON  
         #print(type(DatosIDJSON))                              #Ve que tipo de variable es, en este caso "Dict= diccionario= {Key:value,key:valu,...}"              
-        #print(DatosIDJSON)                                    #Imprime el contenido de la variable tipo Dict  
+        #print(DatosIDJSON)                                   #Imprime el contenido de la variable tipo Dict  
         Hmax=DatosIDJSON['Hmax']                              #Accede al diccionario y toma el valor de Hmax y lo guarda e variable de python Hmax
         Hmin=DatosIDJSON['Hmin']
         Smin=DatosIDJSON['Smin']

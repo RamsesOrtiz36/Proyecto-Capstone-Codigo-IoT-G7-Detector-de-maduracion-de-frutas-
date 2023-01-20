@@ -1,0 +1,1604 @@
+[
+    {
+        "id": "1eaeb951efb50769",
+        "type": "tab",
+        "label": "Flow de Medición ",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "f8bf4d7b582e5af8",
+        "type": "group",
+        "z": "1eaeb951efb50769",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "74f4ed8a9d834cec",
+            "5f76958ccca49c3d",
+            "64a67aed20582c0b",
+            "295bb9ab1b40fb3c"
+        ],
+        "x": 14,
+        "y": 1219,
+        "w": 732,
+        "h": 122
+    },
+    {
+        "id": "35e835954c2ef725",
+        "type": "group",
+        "z": "1eaeb951efb50769",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "99506120f55f6738",
+            "be4f923a3b8090a1",
+            "24b3c87419630f01",
+            "253c981b168e44fa",
+            "87d90a52b2c51e09",
+            "bff4183d34244767",
+            "25efa0629fb279b0",
+            "f532cccc8072b92a"
+        ],
+        "x": -26,
+        "y": -21,
+        "w": 1072,
+        "h": 182
+    },
+    {
+        "id": "a8fd6589ed1150d6",
+        "type": "group",
+        "z": "1eaeb951efb50769",
+        "name": "Lectura de sensores de gases tipo MQ",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "f61db36266c933c8",
+            "72031523616d5198",
+            "f4369cace9558f9c",
+            "af457bd9b9cd44d8",
+            "91257ee22f7da35d",
+            "101dca2d26c39d87",
+            "20a6b074779c54d2",
+            "31f3cb01213796e0",
+            "681adf9ffb08b7c2",
+            "a10ce5f3596c15b8",
+            "de2ab5d4f5df1e4c",
+            "7c4e08a2aa32e07c",
+            "a089d4d75b15985c",
+            "e0a23103ec80af05",
+            "4813fdeb47522b6c",
+            "2673a7c057302c8d",
+            "ce863068d6756dc6",
+            "55bf4bbf48557120",
+            "cc4f2b3ce45f6617",
+            "587375f96236d457"
+        ],
+        "x": -6,
+        "y": 179,
+        "w": 1072,
+        "h": 502
+    },
+    {
+        "id": "8588b35321a5fb3a",
+        "type": "group",
+        "z": "1eaeb951efb50769",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "12e8ed3165e1c206",
+            "3c73a0ee3d5db6d2"
+        ],
+        "x": 8,
+        "y": 613,
+        "w": 2044,
+        "h": 494
+    },
+    {
+        "id": "c587450ef736d3d9",
+        "type": "group",
+        "z": "1eaeb951efb50769",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "b0b205296924c270",
+            "d75cc9f276e212ac",
+            "709c245d7b073504",
+            "ef4a1606fb3b703d",
+            "12cacb780b13b48b",
+            "15d9106e5ac118ae",
+            "02b188f52ef65293",
+            "117c5c6035aa6b60"
+        ],
+        "x": 1614,
+        "y": 379,
+        "w": 852,
+        "h": 222
+    },
+    {
+        "id": "12e8ed3165e1c206",
+        "type": "group",
+        "z": "1eaeb951efb50769",
+        "g": "8588b35321a5fb3a",
+        "name": "Presentación de Resultados de python ",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "f7fce06d303954cb",
+            "04a12ab95df9f560",
+            "3f2d559fd2b0f34b",
+            "84f6e950192b1bcd",
+            "e329a0ae457d6eda",
+            "6c99225317ac7ec2",
+            "4a49a877df56603b",
+            "3cf90905d118ef8b",
+            "c4918dc2026743c0",
+            "65900c847df05596",
+            "b73e45891a92ada9",
+            "137ae14d35d89c65",
+            "f7ad2fcec3170edd"
+        ],
+        "x": 1034,
+        "y": 639,
+        "w": 992,
+        "h": 362
+    },
+    {
+        "id": "3c73a0ee3d5db6d2",
+        "type": "group",
+        "z": "1eaeb951efb50769",
+        "g": "8588b35321a5fb3a",
+        "name": "Control ejecución de python",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "8960ae892da5b3aa",
+            "35bbe95e0c2d54a9",
+            "f479fc6793704d84",
+            "e0a66a1bc3eca154",
+            "e120cebf60662810",
+            "3b82d2452f321216",
+            "4e634be15177667d",
+            "22dc8c8a18748895",
+            "dc212558c9f66a47"
+        ],
+        "x": 34,
+        "y": 879,
+        "w": 992,
+        "h": 202
+    },
+    {
+        "id": "f61db36266c933c8",
+        "type": "ui_text",
+        "z": "1eaeb951efb50769",
+        "g": "a8fd6589ed1150d6",
+        "group": "38b9a6931596eeb3",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "Temperatura Sensor",
+        "label": "Sensor de Temperatura",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 860,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "72031523616d5198",
+        "type": "ui_text",
+        "z": "1eaeb951efb50769",
+        "g": "a8fd6589ed1150d6",
+        "group": "38b9a6931596eeb3",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "Humedad Sensor",
+        "label": "Humedad Sensor",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 850,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "f4369cace9558f9c",
+        "type": "ui_text",
+        "z": "1eaeb951efb50769",
+        "g": "a8fd6589ed1150d6",
+        "group": "38b9a6931596eeb3",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": " CO2 Sensor",
+        "label": "Sensor CO2",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 830,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "af457bd9b9cd44d8",
+        "type": "ui_text",
+        "z": "1eaeb951efb50769",
+        "g": "a8fd6589ed1150d6",
+        "group": "38b9a6931596eeb3",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "Metano Sensor",
+        "label": "Sensor de Metano",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 840,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "91257ee22f7da35d",
+        "type": "ui_text",
+        "z": "1eaeb951efb50769",
+        "g": "a8fd6589ed1150d6",
+        "group": "38b9a6931596eeb3",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "Butano Sensor",
+        "label": "Sensor de Butano",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 840,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "101dca2d26c39d87",
+        "type": "ui_text",
+        "z": "1eaeb951efb50769",
+        "g": "a8fd6589ed1150d6",
+        "group": "38b9a6931596eeb3",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "name": "Alcohol Sensor",
+        "label": "Sensor de Alcohol",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 840,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "99506120f55f6738",
+        "type": "ui_media",
+        "z": "1eaeb951efb50769",
+        "g": "35e835954c2ef725",
+        "group": "62d2c095e7eef6cc",
+        "name": "Imagen de camara",
+        "width": 5,
+        "height": 4,
+        "order": 1,
+        "category": "",
+        "file": "MQTT comprovar ip de hivemq.png",
+        "layout": "adjust",
+        "showcontrols": true,
+        "loop": true,
+        "onstart": false,
+        "scope": "local",
+        "tooltip": "",
+        "x": 850,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "20a6b074779c54d2",
+        "type": "comment",
+        "z": "1eaeb951efb50769",
+        "g": "a8fd6589ed1150d6",
+        "name": "Sensores gases",
+        "info": "los sensores funcionan como interruptores\ntienen su propio led verde cuando se satura detecta y prende",
+        "x": 640,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "31f3cb01213796e0",
+        "type": "function",
+        "z": "1eaeb951efb50769",
+        "g": "a8fd6589ed1150d6",
+        "name": "function 11",
+        "func": "msg.payload= msg.payload.temp;\n\nglobal.set(\"Temperatura\",msg.payload); \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 280,
+        "wires": [
+            [
+                "f61db36266c933c8"
+            ]
+        ]
+    },
+    {
+        "id": "681adf9ffb08b7c2",
+        "type": "mqtt in",
+        "z": "1eaeb951efb50769",
+        "g": "a8fd6589ed1150d6",
+        "name": "Matriz sensores ESP32",
+        "topic": "codigoIoT/ejemplo/mqtt",
+        "qos": "0",
+        "datatype": "utf8",
+        "broker": "9c0ed33ac6aef07c",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 400,
+        "wires": [
+            [
+                "ce863068d6756dc6",
+                "587375f96236d457"
+            ]
+        ]
+    },
+    {
+        "id": "be4f923a3b8090a1",
+        "type": "change",
+        "z": "1eaeb951efb50769",
+        "g": "35e835954c2ef725",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "mimetype",
+                "pt": "msg",
+                "to": "image/png",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 630,
+        "y": 80,
+        "wires": [
+            [
+                "99506120f55f6738"
+            ]
+        ]
+    },
+    {
+        "id": "f7fce06d303954cb",
+        "type": "ui_text",
+        "z": "1eaeb951efb50769",
+        "g": "12e8ed3165e1c206",
+        "group": "a5c7b6c251ac7e49",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Fecha actual (dia/mes/año)",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 1880,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "04a12ab95df9f560",
+        "type": "ui_text",
+        "z": "1eaeb951efb50769",
+        "g": "12e8ed3165e1c206",
+        "group": "a5c7b6c251ac7e49",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Fecha limite",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 1830,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "b0b205296924c270",
+        "type": "ui_gauge",
+        "z": "1eaeb951efb50769",
+        "g": "c587450ef736d3d9",
+        "name": "",
+        "group": "a5c7b6c251ac7e49",
+        "order": 6,
+        "width": 6,
+        "height": 3,
+        "gtype": "gage",
+        "title": "Donar poducto cuando llegue a ROJO",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "21",
+        "colors": [
+            "#cc0000",
+            "#e6e600",
+            "#00b500"
+        ],
+        "seg1": "2",
+        "seg2": "7",
+        "className": "",
+        "x": 2190,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "a10ce5f3596c15b8",
+        "type": "function",
+        "z": "1eaeb951efb50769",
+        "g": "a8fd6589ed1150d6",
+        "name": "function 18",
+        "func": "msg.payload= msg.payload.hum;\nglobal.set(\"hum\",msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 340,
+        "wires": [
+            [
+                "72031523616d5198"
+            ]
+        ]
+    },
+    {
+        "id": "de2ab5d4f5df1e4c",
+        "type": "function",
+        "z": "1eaeb951efb50769",
+        "g": "a8fd6589ed1150d6",
+        "name": "function 19",
+        "func": "msg.payload= msg.payload.mq135;\nglobal.set(\"CO2\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 460,
+        "wires": [
+            [
+                "f4369cace9558f9c"
+            ]
+        ]
+    },
+    {
+        "id": "7c4e08a2aa32e07c",
+        "type": "function",
+        "z": "1eaeb951efb50769",
+        "g": "a8fd6589ed1150d6",
+        "name": "function 20",
+        "func": "msg.payload= msg.payload.mq2;\nglobal.set(\"metano\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 520,
+        "wires": [
+            [
+                "af457bd9b9cd44d8"
+            ]
+        ]
+    },
+    {
+        "id": "a089d4d75b15985c",
+        "type": "function",
+        "z": "1eaeb951efb50769",
+        "g": "a8fd6589ed1150d6",
+        "name": "function 21",
+        "func": "msg.payload= msg.payload.mq7;\nglobal.set(\"butano\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 580,
+        "wires": [
+            [
+                "91257ee22f7da35d"
+            ]
+        ]
+    },
+    {
+        "id": "e0a23103ec80af05",
+        "type": "function",
+        "z": "1eaeb951efb50769",
+        "g": "a8fd6589ed1150d6",
+        "name": "function 22",
+        "func": "msg.payload= msg.payload.mq3;\nglobal.set(\"alcohol\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 640,
+        "wires": [
+            [
+                "101dca2d26c39d87"
+            ]
+        ]
+    },
+    {
+        "id": "24b3c87419630f01",
+        "type": "inject",
+        "z": "1eaeb951efb50769",
+        "g": "35e835954c2ef725",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 80,
+        "wires": [
+            [
+                "f532cccc8072b92a",
+                "25efa0629fb279b0"
+            ]
+        ]
+    },
+    {
+        "id": "253c981b168e44fa",
+        "type": "comment",
+        "z": "1eaeb951efb50769",
+        "g": "35e835954c2ef725",
+        "name": "Imagen Original y con filtro de calibración ",
+        "info": "",
+        "x": 160,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "4813fdeb47522b6c",
+        "type": "comment",
+        "z": "1eaeb951efb50769",
+        "g": "a8fd6589ed1150d6",
+        "name": "Sensores Temperatura y humedad",
+        "info": "",
+        "x": 700,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "d75cc9f276e212ac",
+        "type": "comment",
+        "z": "1eaeb951efb50769",
+        "g": "c587450ef736d3d9",
+        "name": "Alarma de donación",
+        "info": "",
+        "x": 1750,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "74f4ed8a9d834cec",
+        "type": "comment",
+        "z": "1eaeb951efb50769",
+        "g": "f8bf4d7b582e5af8",
+        "name": "contorl de flujo de ventanas",
+        "info": "",
+        "x": 160,
+        "y": 1260,
+        "wires": []
+    },
+    {
+        "id": "8960ae892da5b3aa",
+        "type": "exec",
+        "z": "1eaeb951efb50769",
+        "g": "3c73a0ee3d5db6d2",
+        "command": "python3 /home/ramses/Documentos/GitHubRamses/Proyecto-Capstone-Codigo-IoT-G7-Detector-de-maduracion-de-frutas-/MedicionColorFruta.py",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "EJECUTAR PYTHON MEDICION",
+        "x": 640,
+        "y": 1020,
+        "wires": [
+            [
+                "4e634be15177667d",
+                "22dc8c8a18748895"
+            ],
+            [
+                "f479fc6793704d84"
+            ],
+            [
+                "f479fc6793704d84"
+            ]
+        ]
+    },
+    {
+        "id": "35bbe95e0c2d54a9",
+        "type": "change",
+        "z": "1eaeb951efb50769",
+        "g": "3c73a0ee3d5db6d2",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "kill",
+                "pt": "msg",
+                "to": "SIGQUIT",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 370,
+        "y": 1040,
+        "wires": [
+            [
+                "8960ae892da5b3aa"
+            ]
+        ]
+    },
+    {
+        "id": "f479fc6793704d84",
+        "type": "debug",
+        "z": "1eaeb951efb50769",
+        "g": "3c73a0ee3d5db6d2",
+        "name": "debug 11",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 920,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "2673a7c057302c8d",
+        "type": "comment",
+        "z": "1eaeb951efb50769",
+        "g": "a8fd6589ed1150d6",
+        "name": "README",
+        "info": "Tomar el valor del payload que sea de temperatura y guardarla en el msg.payload de salida para el cuadro de texto\n\nTomar el mismo valor de temperatura y guardarla en variable global\n\nRepetir para todos los valores de sensores",
+        "x": 980,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "e0a66a1bc3eca154",
+        "type": "comment",
+        "z": "1eaeb951efb50769",
+        "g": "3c73a0ee3d5db6d2",
+        "name": "Control de ejecución de programa python desde node-red",
+        "info": "",
+        "x": 270,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "ce863068d6756dc6",
+        "type": "json",
+        "z": "1eaeb951efb50769",
+        "g": "a8fd6589ed1150d6",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 330,
+        "y": 400,
+        "wires": [
+            [
+                "31f3cb01213796e0",
+                "a10ce5f3596c15b8",
+                "587375f96236d457"
+            ]
+        ]
+    },
+    {
+        "id": "3f2d559fd2b0f34b",
+        "type": "simpletime",
+        "z": "1eaeb951efb50769",
+        "g": "12e8ed3165e1c206",
+        "name": "",
+        "mydate": false,
+        "myymd": false,
+        "myyear": true,
+        "mymonth": false,
+        "mymonthn": true,
+        "mydom": true,
+        "mydoy": false,
+        "myday": false,
+        "myhourpm": false,
+        "myhour": true,
+        "mytime": false,
+        "mytimes": false,
+        "myminute": false,
+        "myminutes": false,
+        "mysecond": false,
+        "mymillis": false,
+        "myepoch": false,
+        "myrawdate": false,
+        "mypm": false,
+        "x": 1370,
+        "y": 880,
+        "wires": [
+            [
+                "84f6e950192b1bcd",
+                "6c99225317ac7ec2",
+                "65900c847df05596"
+            ]
+        ]
+    },
+    {
+        "id": "84f6e950192b1bcd",
+        "type": "function",
+        "z": "1eaeb951efb50769",
+        "g": "12e8ed3165e1c206",
+        "name": "Formato dmy para fecha de hoy",
+        "func": "var dia = msg.mydom;\nvar mes =msg.mymonthn;\nvar an_o= msg.myyear;\nmsg.payload= dia+\"/\"+mes+\"/\"+an_o;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1590,
+        "y": 880,
+        "wires": [
+            [
+                "f7fce06d303954cb"
+            ]
+        ]
+    },
+    {
+        "id": "e120cebf60662810",
+        "type": "ui_button",
+        "z": "1eaeb951efb50769",
+        "g": "3c73a0ee3d5db6d2",
+        "name": "",
+        "group": "62d2c095e7eef6cc",
+        "order": 7,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "label": "Inicia medición",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 180,
+        "y": 960,
+        "wires": [
+            [
+                "3b82d2452f321216"
+            ]
+        ]
+    },
+    {
+        "id": "55bf4bbf48557120",
+        "type": "mqtt in",
+        "z": "1eaeb951efb50769",
+        "g": "a8fd6589ed1150d6",
+        "name": "",
+        "topic": "codigoIoT/ejemplo/mqtt/mq",
+        "qos": "2",
+        "datatype": "utf8",
+        "broker": "9c0ed33ac6aef07c",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 500,
+        "wires": [
+            [
+                "cc4f2b3ce45f6617"
+            ]
+        ]
+    },
+    {
+        "id": "cc4f2b3ce45f6617",
+        "type": "json",
+        "z": "1eaeb951efb50769",
+        "g": "a8fd6589ed1150d6",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 330,
+        "y": 500,
+        "wires": [
+            [
+                "de2ab5d4f5df1e4c",
+                "7c4e08a2aa32e07c",
+                "a089d4d75b15985c",
+                "e0a23103ec80af05",
+                "587375f96236d457"
+            ]
+        ]
+    },
+    {
+        "id": "3b82d2452f321216",
+        "type": "function",
+        "z": "1eaeb951efb50769",
+        "g": "3c73a0ee3d5db6d2",
+        "name": "Enviar Nombre fruta ",
+        "func": "msg.payload = global.get(\"NomFruta\");\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 960,
+        "wires": [
+            [
+                "8960ae892da5b3aa"
+            ]
+        ]
+    },
+    {
+        "id": "87d90a52b2c51e09",
+        "type": "change",
+        "z": "1eaeb951efb50769",
+        "g": "35e835954c2ef725",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "mimetype",
+                "pt": "msg",
+                "to": "image/png",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 630,
+        "y": 120,
+        "wires": [
+            [
+                "bff4183d34244767"
+            ]
+        ]
+    },
+    {
+        "id": "bff4183d34244767",
+        "type": "ui_media",
+        "z": "1eaeb951efb50769",
+        "g": "35e835954c2ef725",
+        "group": "62d2c095e7eef6cc",
+        "name": "Imagen Resultado de medición",
+        "width": 5,
+        "height": 4,
+        "order": 2,
+        "category": "",
+        "file": "",
+        "layout": "adjust",
+        "showcontrols": true,
+        "loop": true,
+        "onstart": false,
+        "scope": "local",
+        "tooltip": "",
+        "x": 890,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "25efa0629fb279b0",
+        "type": "file in",
+        "z": "1eaeb951efb50769",
+        "g": "35e835954c2ef725",
+        "name": "",
+        "filename": "/home/ramses/ImagenPythonRes2.png",
+        "filenameType": "str",
+        "format": "",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 350,
+        "y": 120,
+        "wires": [
+            [
+                "87d90a52b2c51e09"
+            ]
+        ]
+    },
+    {
+        "id": "e329a0ae457d6eda",
+        "type": "ui_text",
+        "z": "1eaeb951efb50769",
+        "g": "12e8ed3165e1c206",
+        "group": "a5c7b6c251ac7e49",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Grado de maduración de la fruta",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 1350,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "f532cccc8072b92a",
+        "type": "http request",
+        "z": "1eaeb951efb50769",
+        "g": "35e835954c2ef725",
+        "name": "",
+        "method": "GET",
+        "ret": "bin",
+        "paytoqs": "ignore",
+        "url": "http://192.168.1.69/cam-lo.jpg",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 310,
+        "y": 80,
+        "wires": [
+            [
+                "be4f923a3b8090a1"
+            ]
+        ]
+    },
+    {
+        "id": "6c99225317ac7ec2",
+        "type": "function",
+        "z": "1eaeb951efb50769",
+        "g": "12e8ed3165e1c206",
+        "name": "Contorl fecha limite",
+        "func": "var an_o = msg.myyear;\nvar dia = Number(msg.mydom);\nvar DR = global.get('DRTotal2');\ndia = dia + DR;\nvar mes = Number(msg.mymonthn);\nif (dia<1){\n    if (mes==1){\n        dia=31 + dia;\n        mes=12;\n    }\n    else if (mes == 2) {\n        dia = 31 + dia;\n        mes=mes-1;\n        }\n    else if (mes == 3) {\n        dia = 28 + dia;\n        mes = mes - 1;\n    }\n    else if (mes == 4) {\n        dia = 31 + dia;\n        mes = mes - 1;\n    }\n     else if (mes == 5) {\n        dia = 30 + dia;\n        mes = mes - 1;\n    }\n     else if (mes == 6) {\n        dia = 31 + dia;\n        mes = mes - 1;\n    }\n     else if (mes == 7) {\n        dia = 30 + dia;\n        mes = mes - 1;\n    }\n     else if (mes == 8) {\n        dia = 31 + dia;\n        mes = mes - 1;\n    }\n     else if (mes == 9) {\n        dia = 31 + dia;\n        mes = mes - 1;\n    }\n     else if (mes == 10) {\n        dia = 30 + dia;\n        mes = mes - 1;\n    }\n     else if (mes == 11) {\n        dia = 31 + dia;\n        mes = mes - 1;\n    }\n     else if (mes == 12) {\n        dia = 30 + dia;\n        mes = mes - 1;\n    }\n}\n//Caso cuando el daia se pasa al siguiente mes\nif (dia > 28) {\n    if (mes == 1) {\n        if (dia > 31){\n            dia = dia - 31;\n            mes = mes +1;}\n    }\n    else if (mes == 2) {\n        if (dia > 28) {\n            dia = dia - 28;\n            mes = mes + 1;}\n        }\n    \n    else if (mes == 3) {\n       if (dia > 31) {\n            dia = dia - 31;\n            mes = mes + 1;\n        }\n    }\n    else if (mes == 4) {\n        if (dia > 30) {\n            dia = dia - 30;\n            mes = mes + 1;\n        }\n    }\n        \n    else if (mes == 5) {\n        if (dia > 31) {\n            dia = dia - 31;\n            mes = mes + 1;\n        }\n    }\n    else if (mes == 6) {\n        if (dia > 30) {\n            dia = dia - 30;\n            mes = mes + 1;\n        }\n    }\n    else if (mes == 7) {\n        if (dia > 31) {\n            dia = dia - 31;\n            mes = mes + 1;\n        }\n    }\n    else if (mes == 8) {\n        if (dia > 31) {\n            dia = dia - 31;\n            mes = mes + 1;\n        }\n    } \n    else if (mes == 9) {\n        if (dia > 30) {\n            dia = dia - 30;\n            mes = mes + 1;\n        }\n    }\n    else if (mes == 10) {\n        if (dia > 31) {\n            dia = dia - 31;\n            mes = mes + 1;\n        }\n    }\n    else if (mes == 11) {\n        if (dia > 30) {\n            dia = dia - 30;\n            mes = mes + 1;\n        }\n    }\n    else if (mes == 12) {\n        if (dia > 31){\n        dia = dia - 31;\n        mes =1;\n        an_o=an_o+1;\n        }\n    }    \n}\n\nmsg.payload = dia + \"/\" + mes + \"/\" +an_o ;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1570,
+        "y": 920,
+        "wires": [
+            [
+                "04a12ab95df9f560",
+                "4a49a877df56603b"
+            ]
+        ]
+    },
+    {
+        "id": "709c245d7b073504",
+        "type": "function",
+        "z": "1eaeb951efb50769",
+        "g": "c587450ef736d3d9",
+        "name": "Dias restantes -DiasTemp-DiasHum-DiasGases",
+        "func": "//Toma los valores de las variables globales y ponerlas en variables locales\nvar DR = global.get('DiasRestant')\nvar Temperatura = global.get('Temperatura')\nvar Humedad = global.get('hum')\nvar Butano = global.get('butano')\nvar Metano = global.get('metano')\nvar Alcohol = global.get('alcohol')\nvar CO2 = global.get('CO2')\n//Crear variables locales para los dias \n//que se quitarán por cada parametro \nvar DTemperatura = 0\nvar DHumedad = 0\nvar Dbutano = 0\nvar Dmetano = 0\nvar Dalcohol =0\nvar DCO2 = 0\nvar DRTotal = 0\n//Compara cada parametro para asignarle \n//valor a la variable\n\nif (Temperatura <= 4){\nDTemperatura=0;\n}\nelse if ((Temperatura <= 10) && (Temperatura > 4) ){\n    DTemperatura = 1;\n}\nelse if ((Temperatura <= 25) && (Temperatura > 10)) {\n    DTemperatura = 2;\n}\nelse if ((Temperatura <= 36) && (Temperatura > 25)) {\n    DTemperatura = 3;\n}\nelse if ((Temperatura <= 40) && (Temperatura > 36)) {\n    DTemperatura = 4;\n}\n\nif (Humedad  <= 10) {\n    DHumedad = 0;\n}\nelse if ((Humedad  <= 10) && (Temperatura > 4)) {\n    DHumedad = 1;\n}\nelse if ((Humedad  <= 25) && (Temperatura > 10)) {\n    DHumedad = 2;\n}\nelse if ((Humedad  <= 36) && (Temperatura > 25)) {\n    DHumedad = 3;\n}\nelse if ((Humedad  <= 40) && (Temperatura > 36)) {\n    DHumedad = 4;\n}\n\nif (Butano != 0) { Dbutano=1}\nif (Metano != 0) { Dmetano = 1 }\nif (Alcohol != 0) { Dalcohol = 1 }\nif (CO2 != 0) { DCO2 = 1 }\n\nDRTotal=DR-DTemperatura-DHumedad-Dbutano-Dmetano-Dalcohol-DCO2;\nmsg.payload=DRTotal\nglobal.set(\"DRTotal2\", msg.payload)\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1820,
+        "y": 560,
+        "wires": [
+            [
+                "b0b205296924c270",
+                "ef4a1606fb3b703d",
+                "12cacb780b13b48b",
+                "02b188f52ef65293"
+            ]
+        ]
+    },
+    {
+        "id": "4e634be15177667d",
+        "type": "debug",
+        "z": "1eaeb951efb50769",
+        "g": "3c73a0ee3d5db6d2",
+        "name": "debug 18",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 920,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "4a49a877df56603b",
+        "type": "debug",
+        "z": "1eaeb951efb50769",
+        "g": "12e8ed3165e1c206",
+        "name": "debug 19",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1820,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "587375f96236d457",
+        "type": "debug",
+        "z": "1eaeb951efb50769",
+        "g": "a8fd6589ed1150d6",
+        "name": "debug 20",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 320,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "22dc8c8a18748895",
+        "type": "json",
+        "z": "1eaeb951efb50769",
+        "g": "3c73a0ee3d5db6d2",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 910,
+        "y": 940,
+        "wires": [
+            [
+                "f7ad2fcec3170edd",
+                "3cf90905d118ef8b",
+                "137ae14d35d89c65"
+            ]
+        ]
+    },
+    {
+        "id": "f7ad2fcec3170edd",
+        "type": "function",
+        "z": "1eaeb951efb50769",
+        "g": "12e8ed3165e1c206",
+        "name": "DiasRestant sin efecto del ambiente",
+        "func": "msg.payload = msg.payload.DiasRestareaM;\nglobal.set(\"DiasRestant\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1230,
+        "y": 820,
+        "wires": [
+            [
+                "3cf90905d118ef8b",
+                "3f2d559fd2b0f34b",
+                "709c245d7b073504"
+            ]
+        ]
+    },
+    {
+        "id": "3cf90905d118ef8b",
+        "type": "debug",
+        "z": "1eaeb951efb50769",
+        "g": "12e8ed3165e1c206",
+        "name": "debug 21",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1360,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "137ae14d35d89c65",
+        "type": "function",
+        "z": "1eaeb951efb50769",
+        "g": "12e8ed3165e1c206",
+        "name": "Madur",
+        "func": "msg.payload = msg.payload.MaduracionM;\nglobal.set(\"Madur\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1110,
+        "y": 740,
+        "wires": [
+            [
+                "3cf90905d118ef8b",
+                "e329a0ae457d6eda"
+            ]
+        ]
+    },
+    {
+        "id": "c4918dc2026743c0",
+        "type": "ui_text",
+        "z": "1eaeb951efb50769",
+        "g": "12e8ed3165e1c206",
+        "group": "a5c7b6c251ac7e49",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "Nombre de fruta",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 1840,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "65900c847df05596",
+        "type": "function",
+        "z": "1eaeb951efb50769",
+        "g": "12e8ed3165e1c206",
+        "name": "function 34",
+        "func": "msg.payload =  global.get(\"NomFruta\");\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1590,
+        "y": 840,
+        "wires": [
+            [
+                "c4918dc2026743c0"
+            ]
+        ]
+    },
+    {
+        "id": "b73e45891a92ada9",
+        "type": "comment",
+        "z": "1eaeb951efb50769",
+        "g": "12e8ed3165e1c206",
+        "name": "Resultados del analisis de imagen y sensores ",
+        "info": "",
+        "x": 1370,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "5f76958ccca49c3d",
+        "type": "ui_button",
+        "z": "1eaeb951efb50769",
+        "g": "f8bf4d7b582e5af8",
+        "name": "",
+        "group": "6454d2f1870f6c03",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Ir a Calibración",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 200,
+        "y": 1300,
+        "wires": [
+            [
+                "295bb9ab1b40fb3c"
+            ]
+        ]
+    },
+    {
+        "id": "64a67aed20582c0b",
+        "type": "ui_ui_control",
+        "z": "1eaeb951efb50769",
+        "g": "f8bf4d7b582e5af8",
+        "name": "",
+        "events": "all",
+        "x": 660,
+        "y": 1300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "295bb9ab1b40fb3c",
+        "type": "function",
+        "z": "1eaeb951efb50769",
+        "g": "f8bf4d7b582e5af8",
+        "name": "msg.payload = {\"tab\":\"Calibración\"}",
+        "func": "msg.payload = {\"tab\":\"Calibración\"}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 1300,
+        "wires": [
+            [
+                "64a67aed20582c0b"
+            ]
+        ]
+    },
+    {
+        "id": "dc212558c9f66a47",
+        "type": "inject",
+        "z": "1eaeb951efb50769",
+        "g": "3c73a0ee3d5db6d2",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 1040,
+        "wires": [
+            [
+                "35bbe95e0c2d54a9"
+            ]
+        ]
+    },
+    {
+        "id": "a7003017643d7ad5",
+        "type": "function",
+        "z": "1eaeb951efb50769",
+        "name": "function 35",
+        "func": "global.set(\"NomFruta\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 1460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dbd33bbdf999efe4",
+        "type": "ui_dropdown",
+        "z": "1eaeb951efb50769",
+        "name": "",
+        "label": "Fruta",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "62d2c095e7eef6cc",
+        "order": 4,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Naranja",
+                "value": "Naranja",
+                "type": "str"
+            },
+            {
+                "label": "Fruta3",
+                "value": "Fruta 3",
+                "type": "str"
+            },
+            {
+                "label": "Fruta4",
+                "value": "Fruta 4",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 210,
+        "y": 1460,
+        "wires": [
+            [
+                "a7003017643d7ad5"
+            ]
+        ]
+    },
+    {
+        "id": "ef4a1606fb3b703d",
+        "type": "ui_text",
+        "z": "1eaeb951efb50769",
+        "g": "c587450ef736d3d9",
+        "group": "a5c7b6c251ac7e49",
+        "order": 3,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "Dias restantes",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 2260,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "12cacb780b13b48b",
+        "type": "debug",
+        "z": "1eaeb951efb50769",
+        "g": "c587450ef736d3d9",
+        "name": "debug 22",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2240,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "15d9106e5ac118ae",
+        "type": "e-mail",
+        "z": "1eaeb951efb50769",
+        "g": "c587450ef736d3d9",
+        "server": "smtp.gmail.com",
+        "port": "465",
+        "secure": true,
+        "tls": true,
+        "name": "",
+        "dname": "",
+        "x": 2390,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "02b188f52ef65293",
+        "type": "function",
+        "z": "1eaeb951efb50769",
+        "g": "c587450ef736d3d9",
+        "name": "function 36",
+        "func": "msg.to= \"ramses.ortiz36@gmail.com\";\nmsg.topic=\"Mensaje de Donación de producto\"\nmsg.payload = 'Los dias restantes que le quedan a la fruta: ' + global.get(\"NomFruta\") + ' son: ' + global.get(\"DRTotal2\")+' Favor de comunicarse con nosotros o venir a las instalaciones';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2230,
+        "y": 420,
+        "wires": [
+            [
+                "3d60265d68a85c47",
+                "15d9106e5ac118ae"
+            ]
+        ]
+    },
+    {
+        "id": "117c5c6035aa6b60",
+        "type": "inject",
+        "z": "1eaeb951efb50769",
+        "g": "c587450ef736d3d9",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 2000,
+        "y": 420,
+        "wires": [
+            [
+                "02b188f52ef65293"
+            ]
+        ]
+    },
+    {
+        "id": "3d60265d68a85c47",
+        "type": "debug",
+        "z": "1eaeb951efb50769",
+        "name": "debug 23",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2400,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "38b9a6931596eeb3",
+        "type": "ui_group",
+        "name": "Condicion ambiental de la fruta",
+        "tab": "89ed5f45a6a20826",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "62d2c095e7eef6cc",
+        "type": "ui_group",
+        "name": "Imagen2",
+        "tab": "89ed5f45a6a20826",
+        "order": 1,
+        "disp": true,
+        "width": 10,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "9c0ed33ac6aef07c",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "a5c7b6c251ac7e49",
+        "type": "ui_group",
+        "name": "Resultados",
+        "tab": "89ed5f45a6a20826",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "6454d2f1870f6c03",
+        "type": "ui_group",
+        "name": "Guardar medición",
+        "tab": "89ed5f45a6a20826",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "89ed5f45a6a20826",
+        "type": "ui_tab",
+        "name": "Medición",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    }
+]
