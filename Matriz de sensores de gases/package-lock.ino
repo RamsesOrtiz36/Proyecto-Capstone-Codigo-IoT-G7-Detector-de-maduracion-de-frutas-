@@ -1,6 +1,6 @@
 //*
  //* Envío de información del DHT11 por MQTT
- //* por: Equipo IOT
+ //* por: Hugo E, modificado y adaptado por Erica Saavedra
  //* Fecha: 20 diciembre 2022
  //* 
  //* Este programa realiza la lectura del sensor MQ también envía temperatura y humedad relativa por MQTT en un JSON.
