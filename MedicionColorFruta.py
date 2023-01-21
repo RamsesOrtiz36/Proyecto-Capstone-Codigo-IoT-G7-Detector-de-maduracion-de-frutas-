@@ -38,15 +38,15 @@ cursor1=conexion1.cursor()                                                      
 
 def nothing(x):                                                             
     pass
-"""
+#"""
 #Argumentos desde Node-Red
 # Parser
 parser = argparse.ArgumentParser()
 parser.add_argument("NombreFruta", help="Nombre de la fruta seleccionada desde Node red")
 args = parser.parse_args()
 Fruta = args.NombreFruta
-"""
-Fruta="Naranja"
+#"""
+#Fruta="Naranja"
 #Adquiere la imagen desde URL
 #while True:                                                            #ciclo while para que se mantenga rebizando la coneccion a MQTT                       
 url='http://192.168.1.69/cam-lo.jpg'                                    #Asigna la URL a la cual se conecta para capturar la imagen 
