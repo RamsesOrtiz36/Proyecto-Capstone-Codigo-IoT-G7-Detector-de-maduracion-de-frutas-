@@ -1,4 +1,8 @@
-//Este codigo se agrega la comunicación con arduino por I2C
+/*Este codigo se agrega la comunicación con arduino por I2C
+Este codigo fue utilizado por Ramses Ortiz Castro en el proyecto de DEtección de maduración de frutas 
+de noviembre 2022 a enero 2023
+Se uso para capturar la imagen y enviar por http para que un progrma de python pueda captarla y procesarla.
+*/
 #include <WebServer.h>
 #include <WiFi.h>
 #include <esp32cam.h>//esp32cam.h
