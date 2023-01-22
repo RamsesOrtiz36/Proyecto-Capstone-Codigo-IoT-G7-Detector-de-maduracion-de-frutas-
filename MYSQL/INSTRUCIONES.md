@@ -12,10 +12,9 @@
 2. Crear una nueva base de datos
     - `CREATE DATABASE Detector-de-maduracion-de-frutas;`
 3. Seleccionar base de datos
-    - `use Detector-de-maduracion-de-frutas;`
+    - `use Detector;`
 4. Crear una tabla llamada registro que contenga todos los campos necesarios.
-CREATE TABLE registro (id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP, fruta CHAR (248) NOT NULL, temp FLOAT(4,2) NOT NULL, hum INT(1) UNSIGNED NOT NULL, GLP y Butano FLOAT(4,2) UNSIGNED NOT NULL, Alcohol FLOAT(4,2) UNSIGNED NOT NULL, Metano FLOAT(4,2) UNSIGNED NOT NULL, Monóxido de Carbono FLOAT(4,2) UNSIGNED NOT NULL, Dióxido de Carbono FLOAT(4,2) UNSIGNED NOT NULL;
-
+`CREATE TABLE registro (id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP, fruta CHAR (248) NOT NULL, temp FLOAT(4,2) NOT NULL, hum INT(1) UNSIGNED NOT NULL, GLP y Butano INT(1) UNSIGNED NOT NULL, Alcohol INT(1) UNSIGNED NOT NULL, Metano INT(1) UNSIGNED NOT NULL, Monóxido de Carbono INT(1) UNSIGNED NOT NULL, Dióxido de Carbono INT(1) UNSIGNED NOT NULL;`
  temporales:
 
     - id

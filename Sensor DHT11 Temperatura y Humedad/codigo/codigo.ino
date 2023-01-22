@@ -1,16 +1,16 @@
 #include <DHT.h>  // Incluimos librería
  
-#define DHTPIN 2  // Definimos el pin digital donde se conecta el sensor
+#define DHTPIN 4  // Definimos el pin digital donde se conecta el sensor
 // Dependiendo del tipo de sensor
-#define DHTTYPE DHT11
+#define DHTTYPE DHT22
  
-DHT dht(DHTPIN, DHTTYPE); // Inicializamos el sensor DHT11
+DHT dht(DHTPIN, DHTTYPE); // Inicializamos el sensor DHT22
  
 void setup() {
   
   Serial.begin(9600); // Comunicación con monitor serie
  
-  dht.begin();  // Comenzamos comunicación del sensor DHT11
+  dht.begin();  // Comenzamos comunicación del sensor DHT22
  
 }
  
@@ -24,7 +24,7 @@ void loop() {
  
   // Comprobamos si ha habido algún error en la lectura
   if (isnan(h) || isnan(t) ) {
-    Serial.println("Error obteniendo los datos del sensor DHT11");
+    Serial.println("Error obteniendo los datos del sensor DHT22");
     return;
   }
   //Mostramos valores en pantalla
