@@ -84,5 +84,4 @@ Para darle información al usuario se ocupa una pantalla y un medio para introdu
 * Determinar grado de madures del producto.
 * Determinar tiempo de vida útil 
 * Determinar fecha para donación de producto 
-* Enviar resultados
-xx
+* Enviar mensaje por correo electrónico con información de la fruta en condiciones de donación.
