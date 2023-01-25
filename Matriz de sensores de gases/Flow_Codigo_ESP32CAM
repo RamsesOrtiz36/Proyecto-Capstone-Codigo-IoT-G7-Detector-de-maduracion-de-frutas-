@@ -1,3 +1,10 @@
+/*Archivo del codigo para visualizar los valores de los sensores de gases MQs y sensor de temperatura y humedad DHT11
+en el Flow de Node-red Nariz_Aromascopia
+Codigo desarrollado por Erica Saavedra y compañia
+Fecha: 20 de Diciembre del 2022 
+Proyecto de Diplomado Internet de las cosas Samsung Innovation Campus, impartido por la empresa Codigo IoT 
+del 04 de Mayo 2022 al 20 de enero del 2023
+*/
 [
     {
         "id": "73bbae48b0a4524a",
